@@ -138,3 +138,6 @@ Para ver la documentación de la API se debe acceder a la ruta `/api-docs` en el
 - Utilización de modelos en Prisma para definir la estructura de la base de datos.
 - Utilización de variables de entorno para la configuración del servidor y otros datos sensibles.
 - Utilización de Swagger para la documentación automática de la API.
+
+
+
