@@ -1,0 +1,35 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Plan {
+  id          Int           @id @default(autoincrement())
+  name        String
+  price       Float
+  description String?
+  subscriptions Subscription[] // relación de uno a muchos con la tabla Subscription
+}
+
+model User {
+  id             Int      @id @default(autoincrement())
+  email          String   @unique
+  name           String
+  password       String
+  subscriptionId Int?
+  subscription   Subscription? @relation(fields: [subscriptionId], references: [id]) // relación de uno a uno con la tabla Subscription
+}
+
+model Subscription {
+  id          Int        @id @default(autoincrement())
+  name        String
+  description String?
+  price       Float
+  users       User[]     // relación de uno a muchos con la tabla User
+  planId      Int
+  plan        Plan       @relation(fields: [planId], references: [id]) // relación de muchos a uno con la tabla Plan
+}
