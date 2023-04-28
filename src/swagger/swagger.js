@@ -1,26 +1,23 @@
-const swaggerJsdoc = require("swagger-jsdoc");
-const swaggerUi = require("swagger-ui-express");
+// src/swagger/swagger.js
 
-const options = {
-  definition: {
-    openapi: "3.0.0",
+const swaggerJsdoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+const swaggerOptions = {
+  swaggerDefinition: {
     info: {
-      title: "API de Subscripciones",
-      version: "1.0.0",
-      description: "API para el manejo de subscripciones",
+      title: 'Mi API',
+      version: '1.0.0',
+      description: 'Descripción de mi API',
     },
     servers: [
       {
-        url: "http://localhost:3000",
-        description: "Servidor de desarrollo",
+        url: 'http://localhost:3000',
+        description: 'Servidor local',
       },
     ],
   },
-  apis: ["./routes.yml"],
+  apis: ['./routes/*.js'], // Referencia a todos los archivos JS en la carpeta 'routes'
 };
+const swaggerDocs = swaggerJsdoc(swaggerOptions);
 
-const specs = swaggerJsdoc(options);
-
-module.exports = (app) => {
-  app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(specs));
-};
+module.exports = { swaggerUi, swaggerDocs };

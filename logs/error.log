@@ -1,0 +1,156 @@
+2023-04-28T18:57:26.740Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T18:57:26.740Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T18:58:04.804Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T18:58:04.806Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T19:29:42.477Z - error: Error when starting http server on port 3001 Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T19:29:42.477Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T19:36:40.824Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:37:59.878Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:50:57.790Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:51:13.815Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:51:45.535Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:53:52.623Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:54:51.103Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:55:05.206Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:55:41.987Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:55:42.327Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)

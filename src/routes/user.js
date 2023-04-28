@@ -17,4 +17,7 @@ router.put("/:id", userController.updateUser);
 // Endpoint para eliminar un usuario
 router.delete("/:id", userController.deleteUser);
 
+/* // Endpoint para Generar reporte de usuarios
+router.get('/report', userController.generateUserReport); */
+
 module.exports = router;

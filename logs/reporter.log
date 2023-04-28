@@ -1,0 +1,2013 @@
+2023-04-28T18:57:22.037Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T18:57:22.040Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T18:57:22.043Z - info: Extensions location cache not found, crawling directories
+2023-04-28T18:57:22.292Z - info: Found 35 extension(s)
+2023-04-28T18:57:22.355Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T18:57:22.371Z - debug: Discovered 35 extensions
+2023-04-28T18:57:22.470Z - info: Using extension authentication@3.4.0
+2023-04-28T18:57:23.549Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T18:57:23.550Z - info: Using extension base@3.0.1
+2023-04-28T18:57:23.558Z - info: Using extension child-templates@3.1.0
+2023-04-28T18:57:23.563Z - info: Using extension cli@3.2.3
+2023-04-28T18:57:23.568Z - info: Using extension components@3.3.0
+2023-04-28T18:57:23.571Z - info: Using extension data@3.1.0
+2023-04-28T18:57:23.573Z - info: Using extension express@3.7.1
+2023-04-28T18:57:24.781Z - info: Using extension freeze@3.0.1
+2023-04-28T18:57:24.783Z - info: Using extension fs-store@3.2.4
+2023-04-28T18:57:25.206Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T18:57:25.206Z - info: Using extension handlebars@3.2.1
+2023-04-28T18:57:25.208Z - info: Using extension import-export@3.2.0
+2023-04-28T18:57:25.226Z - info: Using extension jsrender@3.0.0
+2023-04-28T18:57:25.228Z - info: Using extension licensing@3.0.3
+2023-04-28T18:57:25.259Z - info: Using extension localization@3.2.2
+2023-04-28T18:57:25.262Z - info: Using extension npm@3.1.2
+2023-04-28T18:57:25.295Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T18:57:25.303Z - info: Using extension reports@3.1.1
+2023-04-28T18:57:25.307Z - info: Using extension tags@3.1.1
+2023-04-28T18:57:25.309Z - info: Using extension text@3.0.0
+2023-04-28T18:57:25.310Z - info: Using extension version-control@3.1.2
+2023-04-28T18:57:25.369Z - info: Using extension assets@3.6.0
+2023-04-28T18:57:25.403Z - info: Using extension authorization@3.3.0
+2023-04-28T18:57:25.408Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T18:57:25.409Z - info: Using extension browser-client@3.1.1
+2023-04-28T18:57:25.414Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T18:57:25.439Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T18:57:25.439Z - info: Using extension docx@3.7.1
+2023-04-28T18:57:25.443Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T18:57:25.692Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T18:57:25.692Z - info: Using extension pptx@3.4.0
+2023-04-28T18:57:25.696Z - info: Using extension scheduling@3.0.3
+2023-04-28T18:57:25.846Z - info: Using extension scripts@3.4.1
+2023-04-28T18:57:25.847Z - info: Using extension static-pdf@3.0.1
+2023-04-28T18:57:25.848Z - info: Using extension studio@3.9.2
+2023-04-28T18:57:26.619Z - info: Using extension xlsx@3.4.0
+2023-04-28T18:57:26.681Z - info: Using extension public-templates@3.0.0
+2023-04-28T18:57:26.682Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T18:57:26.683Z - info: Using extension sample-template@3.2.1
+2023-04-28T18:57:26.685Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T18:57:26.686Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T18:57:26.686Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T18:57:26.708Z - debug: studio default theme is: light
+2023-04-28T18:57:26.721Z - info: Creating default express app.
+2023-04-28T18:57:26.740Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T18:57:26.740Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T18:58:03.921Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T18:58:03.924Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T18:58:03.932Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T18:58:03.940Z - info: Found 35 extension(s)
+2023-04-28T18:58:03.984Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T18:58:04.022Z - debug: Discovered 35 extensions
+2023-04-28T18:58:04.093Z - info: Using extension authentication@3.4.0
+2023-04-28T18:58:04.203Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T18:58:04.203Z - info: Using extension base@3.0.1
+2023-04-28T18:58:04.206Z - info: Using extension child-templates@3.1.0
+2023-04-28T18:58:04.208Z - info: Using extension cli@3.2.3
+2023-04-28T18:58:04.209Z - info: Using extension components@3.3.0
+2023-04-28T18:58:04.211Z - info: Using extension data@3.1.0
+2023-04-28T18:58:04.212Z - info: Using extension express@3.7.1
+2023-04-28T18:58:04.330Z - info: Using extension freeze@3.0.1
+2023-04-28T18:58:04.332Z - info: Using extension fs-store@3.2.4
+2023-04-28T18:58:04.398Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T18:58:04.398Z - info: Using extension handlebars@3.2.1
+2023-04-28T18:58:04.400Z - info: Using extension import-export@3.2.0
+2023-04-28T18:58:04.404Z - info: Using extension jsrender@3.0.0
+2023-04-28T18:58:04.405Z - info: Using extension licensing@3.0.3
+2023-04-28T18:58:04.427Z - info: Using extension localization@3.2.2
+2023-04-28T18:58:04.429Z - info: Using extension npm@3.1.2
+2023-04-28T18:58:04.434Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T18:58:04.439Z - info: Using extension reports@3.1.1
+2023-04-28T18:58:04.445Z - info: Using extension tags@3.1.1
+2023-04-28T18:58:04.449Z - info: Using extension text@3.0.0
+2023-04-28T18:58:04.450Z - info: Using extension version-control@3.1.2
+2023-04-28T18:58:04.462Z - info: Using extension assets@3.6.0
+2023-04-28T18:58:04.475Z - info: Using extension authorization@3.3.0
+2023-04-28T18:58:04.478Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T18:58:04.478Z - info: Using extension browser-client@3.1.1
+2023-04-28T18:58:04.482Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T18:58:04.505Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T18:58:04.506Z - info: Using extension docx@3.7.1
+2023-04-28T18:58:04.510Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T18:58:04.589Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T18:58:04.589Z - info: Using extension pptx@3.4.0
+2023-04-28T18:58:04.591Z - info: Using extension scheduling@3.0.3
+2023-04-28T18:58:04.629Z - info: Using extension scripts@3.4.1
+2023-04-28T18:58:04.630Z - info: Using extension static-pdf@3.0.1
+2023-04-28T18:58:04.630Z - info: Using extension studio@3.9.2
+2023-04-28T18:58:04.725Z - info: Using extension xlsx@3.4.0
+2023-04-28T18:58:04.743Z - info: Using extension public-templates@3.0.0
+2023-04-28T18:58:04.745Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T18:58:04.745Z - info: Using extension sample-template@3.2.1
+2023-04-28T18:58:04.748Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T18:58:04.750Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T18:58:04.751Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T18:58:04.768Z - debug: studio default theme is: light
+2023-04-28T18:58:04.781Z - info: Creating default express app.
+2023-04-28T18:58:04.804Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T18:58:04.806Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T18:58:47.142Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T18:58:47.148Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T18:58:47.157Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T18:58:47.164Z - info: Found 35 extension(s)
+2023-04-28T18:58:47.221Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T18:58:47.258Z - debug: Discovered 35 extensions
+2023-04-28T18:58:47.351Z - info: Using extension authentication@3.4.0
+2023-04-28T18:58:47.473Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T18:58:47.474Z - info: Using extension base@3.0.1
+2023-04-28T18:58:47.480Z - info: Using extension child-templates@3.1.0
+2023-04-28T18:58:47.482Z - info: Using extension cli@3.2.3
+2023-04-28T18:58:47.487Z - info: Using extension components@3.3.0
+2023-04-28T18:58:47.489Z - info: Using extension data@3.1.0
+2023-04-28T18:58:47.490Z - info: Using extension express@3.7.1
+2023-04-28T18:58:47.653Z - info: Using extension freeze@3.0.1
+2023-04-28T18:58:47.656Z - info: Using extension fs-store@3.2.4
+2023-04-28T18:58:47.833Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T18:58:47.833Z - info: Using extension handlebars@3.2.1
+2023-04-28T18:58:47.837Z - info: Using extension import-export@3.2.0
+2023-04-28T18:58:47.848Z - info: Using extension jsrender@3.0.0
+2023-04-28T18:58:47.850Z - info: Using extension licensing@3.0.3
+2023-04-28T18:58:47.882Z - info: Using extension localization@3.2.2
+2023-04-28T18:58:47.884Z - info: Using extension npm@3.1.2
+2023-04-28T18:58:47.889Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T18:58:47.894Z - info: Using extension reports@3.1.1
+2023-04-28T18:58:47.899Z - info: Using extension tags@3.1.1
+2023-04-28T18:58:47.907Z - info: Using extension text@3.0.0
+2023-04-28T18:58:47.910Z - info: Using extension version-control@3.1.2
+2023-04-28T18:58:47.931Z - info: Using extension assets@3.6.0
+2023-04-28T18:58:47.954Z - info: Using extension authorization@3.3.0
+2023-04-28T18:58:47.957Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T18:58:47.957Z - info: Using extension browser-client@3.1.1
+2023-04-28T18:58:47.961Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T18:58:47.989Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T18:58:47.989Z - info: Using extension docx@3.7.1
+2023-04-28T18:58:47.992Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T18:58:48.077Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T18:58:48.078Z - info: Using extension pptx@3.4.0
+2023-04-28T18:58:48.080Z - info: Using extension scheduling@3.0.3
+2023-04-28T18:58:48.135Z - info: Using extension scripts@3.4.1
+2023-04-28T18:58:48.136Z - info: Using extension static-pdf@3.0.1
+2023-04-28T18:58:48.137Z - info: Using extension studio@3.9.2
+2023-04-28T18:58:48.266Z - info: Using extension xlsx@3.4.0
+2023-04-28T18:58:48.290Z - info: Using extension public-templates@3.0.0
+2023-04-28T18:58:48.292Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T18:58:48.292Z - info: Using extension sample-template@3.2.1
+2023-04-28T18:58:48.295Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T18:58:48.300Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T18:58:48.301Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T18:58:48.319Z - debug: studio default theme is: light
+2023-04-28T18:58:48.338Z - info: Creating default express app.
+2023-04-28T18:58:48.367Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T18:58:48.373Z - info: Verifying license key free
+2023-04-28T18:58:48.376Z - info: Using free license
+2023-04-28T18:58:48.385Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T18:58:48.387Z - info: Migration successful
+2023-04-28T18:58:48.389Z - debug: Creating samples is disabled
+2023-04-28T18:58:48.390Z - info: Initializing worker threads
+2023-04-28T18:58:48.390Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T18:58:48.952Z - info: 2 worker threads initialized in 562ms
+2023-04-28T18:58:48.952Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T18:58:48.953Z - info: reporter initialized
+2023-04-28T19:00:17.123Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:00:17.127Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:00:17.162Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:00:17.174Z - info: Found 35 extension(s)
+2023-04-28T19:00:17.197Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:00:17.244Z - debug: Discovered 35 extensions
+2023-04-28T19:00:17.342Z - info: Using extension authentication@3.4.0
+2023-04-28T19:00:17.486Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:00:17.487Z - info: Using extension base@3.0.1
+2023-04-28T19:00:17.490Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:00:17.491Z - info: Using extension cli@3.2.3
+2023-04-28T19:00:17.495Z - info: Using extension components@3.3.0
+2023-04-28T19:00:17.498Z - info: Using extension data@3.1.0
+2023-04-28T19:00:17.502Z - info: Using extension express@3.7.1
+2023-04-28T19:00:17.625Z - info: Using extension freeze@3.0.1
+2023-04-28T19:00:17.627Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:00:17.696Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:00:17.696Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:00:17.698Z - info: Using extension import-export@3.2.0
+2023-04-28T19:00:17.702Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:00:17.703Z - info: Using extension licensing@3.0.3
+2023-04-28T19:00:17.732Z - info: Using extension localization@3.2.2
+2023-04-28T19:00:17.734Z - info: Using extension npm@3.1.2
+2023-04-28T19:00:17.739Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:00:17.742Z - info: Using extension reports@3.1.1
+2023-04-28T19:00:17.746Z - info: Using extension tags@3.1.1
+2023-04-28T19:00:17.751Z - info: Using extension text@3.0.0
+2023-04-28T19:00:17.752Z - info: Using extension version-control@3.1.2
+2023-04-28T19:00:17.765Z - info: Using extension assets@3.6.0
+2023-04-28T19:00:17.783Z - info: Using extension authorization@3.3.0
+2023-04-28T19:00:17.786Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:00:17.786Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:00:17.788Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:00:17.810Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:00:17.811Z - info: Using extension docx@3.7.1
+2023-04-28T19:00:17.815Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:00:17.886Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:00:17.887Z - info: Using extension pptx@3.4.0
+2023-04-28T19:00:17.888Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:00:17.926Z - info: Using extension scripts@3.4.1
+2023-04-28T19:00:17.927Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:00:17.928Z - info: Using extension studio@3.9.2
+2023-04-28T19:00:18.022Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:00:18.036Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:00:18.037Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:00:18.037Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:00:18.039Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:00:18.040Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:00:18.041Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:00:18.058Z - debug: studio default theme is: light
+2023-04-28T19:00:18.073Z - info: Creating default express app.
+2023-04-28T19:00:18.093Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:00:18.106Z - info: Verifying license key free
+2023-04-28T19:00:18.108Z - info: Using free license
+2023-04-28T19:00:18.118Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:00:18.120Z - info: Migration successful
+2023-04-28T19:00:18.122Z - debug: Creating samples is disabled
+2023-04-28T19:00:18.123Z - info: Initializing worker threads
+2023-04-28T19:00:18.124Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:00:18.340Z - info: 2 worker threads initialized in 217ms
+2023-04-28T19:00:18.341Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:00:18.342Z - info: reporter initialized
+2023-04-28T19:02:12.367Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:02:12.371Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:02:12.423Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:02:12.430Z - info: Found 35 extension(s)
+2023-04-28T19:02:12.481Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:02:12.484Z - debug: Discovered 35 extensions
+2023-04-28T19:02:12.550Z - info: Using extension authentication@3.4.0
+2023-04-28T19:02:12.665Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:02:12.666Z - info: Using extension base@3.0.1
+2023-04-28T19:02:12.669Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:02:12.670Z - info: Using extension cli@3.2.3
+2023-04-28T19:02:12.674Z - info: Using extension components@3.3.0
+2023-04-28T19:02:12.675Z - info: Using extension data@3.1.0
+2023-04-28T19:02:12.676Z - info: Using extension express@3.7.1
+2023-04-28T19:02:12.800Z - info: Using extension freeze@3.0.1
+2023-04-28T19:02:12.801Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:02:12.876Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:02:12.876Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:02:12.878Z - info: Using extension import-export@3.2.0
+2023-04-28T19:02:12.885Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:02:12.887Z - info: Using extension licensing@3.0.3
+2023-04-28T19:02:12.913Z - info: Using extension localization@3.2.2
+2023-04-28T19:02:12.915Z - info: Using extension npm@3.1.2
+2023-04-28T19:02:12.921Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:02:12.927Z - info: Using extension reports@3.1.1
+2023-04-28T19:02:12.931Z - info: Using extension tags@3.1.1
+2023-04-28T19:02:12.933Z - info: Using extension text@3.0.0
+2023-04-28T19:02:12.935Z - info: Using extension version-control@3.1.2
+2023-04-28T19:02:12.948Z - info: Using extension assets@3.6.0
+2023-04-28T19:02:12.962Z - info: Using extension authorization@3.3.0
+2023-04-28T19:02:12.966Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:02:12.967Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:02:12.970Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:02:12.993Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:02:12.994Z - info: Using extension docx@3.7.1
+2023-04-28T19:02:12.997Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:02:13.077Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:02:13.078Z - info: Using extension pptx@3.4.0
+2023-04-28T19:02:13.079Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:02:13.110Z - info: Using extension scripts@3.4.1
+2023-04-28T19:02:13.112Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:02:13.114Z - info: Using extension studio@3.9.2
+2023-04-28T19:02:13.209Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:02:13.225Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:02:13.225Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:02:13.226Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:02:13.229Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:02:13.232Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:02:13.233Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:02:13.253Z - debug: studio default theme is: light
+2023-04-28T19:02:13.272Z - info: Creating default express app.
+2023-04-28T19:02:13.300Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:02:13.311Z - info: Verifying license key free
+2023-04-28T19:02:13.314Z - info: Using free license
+2023-04-28T19:02:13.323Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:02:13.323Z - info: Migration successful
+2023-04-28T19:02:13.324Z - debug: Creating samples is disabled
+2023-04-28T19:02:13.325Z - info: Initializing worker threads
+2023-04-28T19:02:13.326Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:02:13.682Z - info: 2 worker threads initialized in 357ms
+2023-04-28T19:02:13.686Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:02:13.687Z - info: reporter initialized
+2023-04-28T19:03:26.462Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:03:26.464Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:03:26.490Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:03:26.498Z - info: Found 35 extension(s)
+2023-04-28T19:03:26.552Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:03:26.580Z - debug: Discovered 35 extensions
+2023-04-28T19:03:26.647Z - info: Using extension authentication@3.4.0
+2023-04-28T19:03:26.765Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:03:26.765Z - info: Using extension base@3.0.1
+2023-04-28T19:03:26.769Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:03:26.770Z - info: Using extension cli@3.2.3
+2023-04-28T19:03:26.771Z - info: Using extension components@3.3.0
+2023-04-28T19:03:26.772Z - info: Using extension data@3.1.0
+2023-04-28T19:03:26.773Z - info: Using extension express@3.7.1
+2023-04-28T19:03:26.889Z - info: Using extension freeze@3.0.1
+2023-04-28T19:03:26.890Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:03:26.957Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:03:26.958Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:03:26.959Z - info: Using extension import-export@3.2.0
+2023-04-28T19:03:26.963Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:03:26.964Z - info: Using extension licensing@3.0.3
+2023-04-28T19:03:26.979Z - info: Using extension localization@3.2.2
+2023-04-28T19:03:26.980Z - info: Using extension npm@3.1.2
+2023-04-28T19:03:26.986Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:03:26.990Z - info: Using extension reports@3.1.1
+2023-04-28T19:03:26.994Z - info: Using extension tags@3.1.1
+2023-04-28T19:03:26.998Z - info: Using extension text@3.0.0
+2023-04-28T19:03:27.003Z - info: Using extension version-control@3.1.2
+2023-04-28T19:03:27.015Z - info: Using extension assets@3.6.0
+2023-04-28T19:03:27.034Z - info: Using extension authorization@3.3.0
+2023-04-28T19:03:27.037Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:03:27.037Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:03:27.040Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:03:27.061Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:03:27.062Z - info: Using extension docx@3.7.1
+2023-04-28T19:03:27.066Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:03:27.143Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:03:27.144Z - info: Using extension pptx@3.4.0
+2023-04-28T19:03:27.145Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:03:27.178Z - info: Using extension scripts@3.4.1
+2023-04-28T19:03:27.179Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:03:27.181Z - info: Using extension studio@3.9.2
+2023-04-28T19:03:27.273Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:03:27.291Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:03:27.295Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:03:27.296Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:03:27.300Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:03:27.302Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:03:27.302Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:03:27.319Z - debug: studio default theme is: light
+2023-04-28T19:03:27.337Z - info: Creating default express app.
+2023-04-28T19:03:27.366Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:03:27.371Z - info: Verifying license key free
+2023-04-28T19:03:27.373Z - info: Using free license
+2023-04-28T19:03:27.387Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:03:27.390Z - info: Migration successful
+2023-04-28T19:03:27.392Z - debug: Creating samples is disabled
+2023-04-28T19:03:27.394Z - info: Initializing worker threads
+2023-04-28T19:03:27.395Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:03:27.616Z - info: 2 worker threads initialized in 222ms
+2023-04-28T19:03:27.617Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:03:27.617Z - info: reporter initialized
+2023-04-28T19:04:02.368Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:04:02.373Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:04:02.414Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:04:02.425Z - info: Found 35 extension(s)
+2023-04-28T19:04:02.510Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:04:02.550Z - debug: Discovered 35 extensions
+2023-04-28T19:04:02.646Z - info: Using extension authentication@3.4.0
+2023-04-28T19:04:02.803Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:04:02.804Z - info: Using extension base@3.0.1
+2023-04-28T19:04:02.809Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:04:02.813Z - info: Using extension cli@3.2.3
+2023-04-28T19:04:02.818Z - info: Using extension components@3.3.0
+2023-04-28T19:04:02.821Z - info: Using extension data@3.1.0
+2023-04-28T19:04:02.822Z - info: Using extension express@3.7.1
+2023-04-28T19:04:02.969Z - info: Using extension freeze@3.0.1
+2023-04-28T19:04:02.971Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:04:03.077Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:04:03.077Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:04:03.079Z - info: Using extension import-export@3.2.0
+2023-04-28T19:04:03.085Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:04:03.087Z - info: Using extension licensing@3.0.3
+2023-04-28T19:04:03.110Z - info: Using extension localization@3.2.2
+2023-04-28T19:04:03.113Z - info: Using extension npm@3.1.2
+2023-04-28T19:04:03.123Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:04:03.128Z - info: Using extension reports@3.1.1
+2023-04-28T19:04:03.137Z - info: Using extension tags@3.1.1
+2023-04-28T19:04:03.143Z - info: Using extension text@3.0.0
+2023-04-28T19:04:03.144Z - info: Using extension version-control@3.1.2
+2023-04-28T19:04:03.165Z - info: Using extension assets@3.6.0
+2023-04-28T19:04:03.196Z - info: Using extension authorization@3.3.0
+2023-04-28T19:04:03.203Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:04:03.204Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:04:03.209Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:04:03.235Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:04:03.236Z - info: Using extension docx@3.7.1
+2023-04-28T19:04:03.242Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:04:03.343Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:04:03.343Z - info: Using extension pptx@3.4.0
+2023-04-28T19:04:03.345Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:04:03.393Z - info: Using extension scripts@3.4.1
+2023-04-28T19:04:03.396Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:04:03.397Z - info: Using extension studio@3.9.2
+2023-04-28T19:04:03.505Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:04:03.521Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:04:03.522Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:04:03.522Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:04:03.524Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:04:03.525Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:04:03.526Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:04:03.539Z - debug: studio default theme is: light
+2023-04-28T19:04:03.557Z - info: Creating default express app.
+2023-04-28T19:04:03.588Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:04:03.593Z - info: Verifying license key free
+2023-04-28T19:04:03.598Z - info: Using free license
+2023-04-28T19:04:03.613Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:04:03.615Z - info: Migration successful
+2023-04-28T19:04:03.619Z - debug: Creating samples is disabled
+2023-04-28T19:04:03.621Z - info: Initializing worker threads
+2023-04-28T19:04:03.621Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:04:03.830Z - info: 2 worker threads initialized in 209ms
+2023-04-28T19:04:03.831Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:04:03.831Z - info: reporter initialized
+2023-04-28T19:05:01.752Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:05:01.756Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:05:01.764Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:05:01.769Z - info: Found 35 extension(s)
+2023-04-28T19:05:01.822Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:05:01.874Z - debug: Discovered 35 extensions
+2023-04-28T19:05:01.966Z - info: Using extension authentication@3.4.0
+2023-04-28T19:05:02.146Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:05:02.148Z - info: Using extension base@3.0.1
+2023-04-28T19:05:02.153Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:05:02.155Z - info: Using extension cli@3.2.3
+2023-04-28T19:05:02.159Z - info: Using extension components@3.3.0
+2023-04-28T19:05:02.166Z - info: Using extension data@3.1.0
+2023-04-28T19:05:02.169Z - info: Using extension express@3.7.1
+2023-04-28T19:05:02.437Z - info: Using extension freeze@3.0.1
+2023-04-28T19:05:02.442Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:05:02.541Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:05:02.542Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:05:02.545Z - info: Using extension import-export@3.2.0
+2023-04-28T19:05:02.553Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:05:02.556Z - info: Using extension licensing@3.0.3
+2023-04-28T19:05:02.587Z - info: Using extension localization@3.2.2
+2023-04-28T19:05:02.588Z - info: Using extension npm@3.1.2
+2023-04-28T19:05:02.595Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:05:02.600Z - info: Using extension reports@3.1.1
+2023-04-28T19:05:02.608Z - info: Using extension tags@3.1.1
+2023-04-28T19:05:02.615Z - info: Using extension text@3.0.0
+2023-04-28T19:05:02.616Z - info: Using extension version-control@3.1.2
+2023-04-28T19:05:02.631Z - info: Using extension assets@3.6.0
+2023-04-28T19:05:02.648Z - info: Using extension authorization@3.3.0
+2023-04-28T19:05:02.652Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:05:02.653Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:05:02.658Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:05:02.685Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:05:02.686Z - info: Using extension docx@3.7.1
+2023-04-28T19:05:02.690Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:05:02.780Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:05:02.781Z - info: Using extension pptx@3.4.0
+2023-04-28T19:05:02.782Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:05:02.817Z - info: Using extension scripts@3.4.1
+2023-04-28T19:05:02.819Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:05:02.820Z - info: Using extension studio@3.9.2
+2023-04-28T19:05:02.959Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:05:02.987Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:05:02.990Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:05:02.991Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:05:02.998Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:05:03.002Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:05:03.003Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:05:03.025Z - debug: studio default theme is: light
+2023-04-28T19:05:03.047Z - info: Creating default express app.
+2023-04-28T19:05:03.077Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:05:03.094Z - info: Verifying license key free
+2023-04-28T19:05:03.097Z - info: Using free license
+2023-04-28T19:05:03.111Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:05:03.114Z - info: Migration successful
+2023-04-28T19:05:03.116Z - debug: Creating samples is disabled
+2023-04-28T19:05:03.118Z - info: Initializing worker threads
+2023-04-28T19:05:03.119Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:05:03.414Z - info: 2 worker threads initialized in 296ms
+2023-04-28T19:05:03.414Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:05:03.415Z - info: reporter initialized
+2023-04-28T19:07:43.840Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:07:43.843Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:07:43.862Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:07:43.868Z - info: Found 35 extension(s)
+2023-04-28T19:07:43.910Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:07:43.947Z - debug: Discovered 35 extensions
+2023-04-28T19:07:44.015Z - info: Using extension authentication@3.4.0
+2023-04-28T19:07:44.132Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:07:44.132Z - info: Using extension base@3.0.1
+2023-04-28T19:07:44.136Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:07:44.137Z - info: Using extension cli@3.2.3
+2023-04-28T19:07:44.142Z - info: Using extension components@3.3.0
+2023-04-28T19:07:44.143Z - info: Using extension data@3.1.0
+2023-04-28T19:07:44.144Z - info: Using extension express@3.7.1
+2023-04-28T19:07:44.271Z - info: Using extension freeze@3.0.1
+2023-04-28T19:07:44.273Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:07:44.341Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:07:44.342Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:07:44.343Z - info: Using extension import-export@3.2.0
+2023-04-28T19:07:44.348Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:07:44.348Z - info: Using extension licensing@3.0.3
+2023-04-28T19:07:44.361Z - info: Using extension localization@3.2.2
+2023-04-28T19:07:44.362Z - info: Using extension npm@3.1.2
+2023-04-28T19:07:44.365Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:07:44.367Z - info: Using extension reports@3.1.1
+2023-04-28T19:07:44.373Z - info: Using extension tags@3.1.1
+2023-04-28T19:07:44.377Z - info: Using extension text@3.0.0
+2023-04-28T19:07:44.378Z - info: Using extension version-control@3.1.2
+2023-04-28T19:07:44.392Z - info: Using extension assets@3.6.0
+2023-04-28T19:07:44.410Z - info: Using extension authorization@3.3.0
+2023-04-28T19:07:44.414Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:07:44.415Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:07:44.418Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:07:44.442Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:07:44.444Z - info: Using extension docx@3.7.1
+2023-04-28T19:07:44.447Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:07:44.525Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:07:44.525Z - info: Using extension pptx@3.4.0
+2023-04-28T19:07:44.527Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:07:44.556Z - info: Using extension scripts@3.4.1
+2023-04-28T19:07:44.558Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:07:44.559Z - info: Using extension studio@3.9.2
+2023-04-28T19:07:44.646Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:07:44.662Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:07:44.663Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:07:44.664Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:07:44.665Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:07:44.666Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:07:44.667Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:07:44.682Z - debug: studio default theme is: light
+2023-04-28T19:07:44.698Z - info: Creating default express app.
+2023-04-28T19:07:44.725Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:07:44.730Z - info: Verifying license key free
+2023-04-28T19:07:44.734Z - info: Using free license
+2023-04-28T19:07:44.744Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:07:44.745Z - info: Migration successful
+2023-04-28T19:07:44.747Z - debug: Creating samples is disabled
+2023-04-28T19:07:44.748Z - info: Initializing worker threads
+2023-04-28T19:07:44.749Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:07:44.962Z - info: 2 worker threads initialized in 214ms
+2023-04-28T19:07:44.963Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:07:44.964Z - info: reporter initialized
+2023-04-28T19:10:11.119Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:10:11.123Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:10:11.143Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:10:11.149Z - info: Found 35 extension(s)
+2023-04-28T19:10:11.193Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:10:11.228Z - debug: Discovered 35 extensions
+2023-04-28T19:10:11.302Z - info: Using extension authentication@3.4.0
+2023-04-28T19:10:11.418Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:10:11.419Z - info: Using extension base@3.0.1
+2023-04-28T19:10:11.422Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:10:11.423Z - info: Using extension cli@3.2.3
+2023-04-28T19:10:11.425Z - info: Using extension components@3.3.0
+2023-04-28T19:10:11.426Z - info: Using extension data@3.1.0
+2023-04-28T19:10:11.427Z - info: Using extension express@3.7.1
+2023-04-28T19:10:11.543Z - info: Using extension freeze@3.0.1
+2023-04-28T19:10:11.545Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:10:11.610Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:10:11.611Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:10:11.614Z - info: Using extension import-export@3.2.0
+2023-04-28T19:10:11.622Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:10:11.624Z - info: Using extension licensing@3.0.3
+2023-04-28T19:10:11.639Z - info: Using extension localization@3.2.2
+2023-04-28T19:10:11.640Z - info: Using extension npm@3.1.2
+2023-04-28T19:10:11.643Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:10:11.644Z - info: Using extension reports@3.1.1
+2023-04-28T19:10:11.647Z - info: Using extension tags@3.1.1
+2023-04-28T19:10:11.653Z - info: Using extension text@3.0.0
+2023-04-28T19:10:11.655Z - info: Using extension version-control@3.1.2
+2023-04-28T19:10:11.673Z - info: Using extension assets@3.6.0
+2023-04-28T19:10:11.691Z - info: Using extension authorization@3.3.0
+2023-04-28T19:10:11.695Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:10:11.695Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:10:11.699Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:10:11.722Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:10:11.723Z - info: Using extension docx@3.7.1
+2023-04-28T19:10:11.727Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:10:11.807Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:10:11.808Z - info: Using extension pptx@3.4.0
+2023-04-28T19:10:11.809Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:10:11.843Z - info: Using extension scripts@3.4.1
+2023-04-28T19:10:11.843Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:10:11.844Z - info: Using extension studio@3.9.2
+2023-04-28T19:10:11.937Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:10:11.951Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:10:11.955Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:10:11.955Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:10:11.957Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:10:11.959Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:10:11.959Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:10:11.975Z - debug: studio default theme is: light
+2023-04-28T19:10:11.994Z - info: Creating default express app.
+2023-04-28T19:10:12.023Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:10:12.029Z - info: Verifying license key free
+2023-04-28T19:10:12.033Z - info: Using free license
+2023-04-28T19:10:12.048Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:10:12.049Z - info: Migration successful
+2023-04-28T19:10:12.052Z - debug: Creating samples is disabled
+2023-04-28T19:10:12.053Z - info: Initializing worker threads
+2023-04-28T19:10:12.054Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:10:12.311Z - info: 2 worker threads initialized in 258ms
+2023-04-28T19:10:12.312Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:10:12.313Z - info: reporter initialized
+2023-04-28T19:11:30.051Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:11:30.055Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:11:30.084Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:11:30.090Z - info: Found 35 extension(s)
+2023-04-28T19:11:30.127Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:11:30.157Z - debug: Discovered 35 extensions
+2023-04-28T19:11:30.234Z - info: Using extension authentication@3.4.0
+2023-04-28T19:11:30.352Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:11:30.353Z - info: Using extension base@3.0.1
+2023-04-28T19:11:30.356Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:11:30.358Z - info: Using extension cli@3.2.3
+2023-04-28T19:11:30.360Z - info: Using extension components@3.3.0
+2023-04-28T19:11:30.361Z - info: Using extension data@3.1.0
+2023-04-28T19:11:30.362Z - info: Using extension express@3.7.1
+2023-04-28T19:11:30.489Z - info: Using extension freeze@3.0.1
+2023-04-28T19:11:30.491Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:11:30.578Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:11:30.580Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:11:30.584Z - info: Using extension import-export@3.2.0
+2023-04-28T19:11:30.591Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:11:30.592Z - info: Using extension licensing@3.0.3
+2023-04-28T19:11:30.610Z - info: Using extension localization@3.2.2
+2023-04-28T19:11:30.612Z - info: Using extension npm@3.1.2
+2023-04-28T19:11:30.616Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:11:30.621Z - info: Using extension reports@3.1.1
+2023-04-28T19:11:30.627Z - info: Using extension tags@3.1.1
+2023-04-28T19:11:30.633Z - info: Using extension text@3.0.0
+2023-04-28T19:11:30.636Z - info: Using extension version-control@3.1.2
+2023-04-28T19:11:30.650Z - info: Using extension assets@3.6.0
+2023-04-28T19:11:30.665Z - info: Using extension authorization@3.3.0
+2023-04-28T19:11:30.667Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:11:30.667Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:11:30.672Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:11:30.694Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:11:30.695Z - info: Using extension docx@3.7.1
+2023-04-28T19:11:30.700Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:11:30.778Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:11:30.778Z - info: Using extension pptx@3.4.0
+2023-04-28T19:11:30.780Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:11:30.810Z - info: Using extension scripts@3.4.1
+2023-04-28T19:11:30.812Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:11:30.814Z - info: Using extension studio@3.9.2
+2023-04-28T19:11:30.930Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:11:30.949Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:11:30.951Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:11:30.952Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:11:30.954Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:11:30.956Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:11:30.956Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:11:30.972Z - debug: studio default theme is: light
+2023-04-28T19:11:30.991Z - info: Creating default express app.
+2023-04-28T19:11:31.018Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:11:31.022Z - info: Verifying license key free
+2023-04-28T19:11:31.025Z - info: Using free license
+2023-04-28T19:11:31.040Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:11:31.042Z - info: Migration successful
+2023-04-28T19:11:31.043Z - debug: Creating samples is disabled
+2023-04-28T19:11:31.045Z - info: Initializing worker threads
+2023-04-28T19:11:31.045Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:11:31.297Z - info: 2 worker threads initialized in 252ms
+2023-04-28T19:11:31.298Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:11:31.299Z - info: reporter initialized
+2023-04-28T19:11:38.064Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:11:38.067Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:11:38.076Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:11:38.082Z - info: Found 35 extension(s)
+2023-04-28T19:11:38.135Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:11:38.177Z - debug: Discovered 35 extensions
+2023-04-28T19:11:38.259Z - info: Using extension authentication@3.4.0
+2023-04-28T19:11:38.416Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:11:38.417Z - info: Using extension base@3.0.1
+2023-04-28T19:11:38.421Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:11:38.423Z - info: Using extension cli@3.2.3
+2023-04-28T19:11:38.424Z - info: Using extension components@3.3.0
+2023-04-28T19:11:38.426Z - info: Using extension data@3.1.0
+2023-04-28T19:11:38.426Z - info: Using extension express@3.7.1
+2023-04-28T19:11:38.590Z - info: Using extension freeze@3.0.1
+2023-04-28T19:11:38.592Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:11:38.680Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:11:38.680Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:11:38.682Z - info: Using extension import-export@3.2.0
+2023-04-28T19:11:38.689Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:11:38.691Z - info: Using extension licensing@3.0.3
+2023-04-28T19:11:38.711Z - info: Using extension localization@3.2.2
+2023-04-28T19:11:38.714Z - info: Using extension npm@3.1.2
+2023-04-28T19:11:38.726Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:11:38.732Z - info: Using extension reports@3.1.1
+2023-04-28T19:11:38.740Z - info: Using extension tags@3.1.1
+2023-04-28T19:11:38.747Z - info: Using extension text@3.0.0
+2023-04-28T19:11:38.749Z - info: Using extension version-control@3.1.2
+2023-04-28T19:11:38.771Z - info: Using extension assets@3.6.0
+2023-04-28T19:11:38.792Z - info: Using extension authorization@3.3.0
+2023-04-28T19:11:38.796Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:11:38.797Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:11:38.802Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:11:38.826Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:11:38.826Z - info: Using extension docx@3.7.1
+2023-04-28T19:11:38.831Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:11:38.958Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:11:38.958Z - info: Using extension pptx@3.4.0
+2023-04-28T19:11:38.961Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:11:38.999Z - info: Using extension scripts@3.4.1
+2023-04-28T19:11:39.000Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:11:39.001Z - info: Using extension studio@3.9.2
+2023-04-28T19:11:39.102Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:11:39.120Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:11:39.121Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:11:39.122Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:11:39.124Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:11:39.126Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:11:39.126Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:11:39.144Z - debug: studio default theme is: light
+2023-04-28T19:11:39.164Z - info: Creating default express app.
+2023-04-28T19:11:39.189Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:11:39.192Z - info: Verifying license key free
+2023-04-28T19:11:39.193Z - info: Using free license
+2023-04-28T19:11:39.205Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:11:39.207Z - info: Migration successful
+2023-04-28T19:11:39.208Z - debug: Creating samples is disabled
+2023-04-28T19:11:39.209Z - info: Initializing worker threads
+2023-04-28T19:11:39.209Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:11:39.485Z - info: 2 worker threads initialized in 276ms
+2023-04-28T19:11:39.486Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:11:39.486Z - info: reporter initialized
+2023-04-28T19:15:15.287Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:15:15.292Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:15:15.304Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:15:15.310Z - info: Found 35 extension(s)
+2023-04-28T19:15:15.389Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:15:15.462Z - debug: Discovered 35 extensions
+2023-04-28T19:15:15.536Z - info: Using extension authentication@3.4.0
+2023-04-28T19:15:15.717Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:15:15.719Z - info: Using extension base@3.0.1
+2023-04-28T19:15:15.724Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:15:15.726Z - info: Using extension cli@3.2.3
+2023-04-28T19:15:15.731Z - info: Using extension components@3.3.0
+2023-04-28T19:15:15.735Z - info: Using extension data@3.1.0
+2023-04-28T19:15:15.738Z - info: Using extension express@3.7.1
+2023-04-28T19:15:15.928Z - info: Using extension freeze@3.0.1
+2023-04-28T19:15:15.934Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:15:16.044Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:15:16.044Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:15:16.047Z - info: Using extension import-export@3.2.0
+2023-04-28T19:15:16.054Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:15:16.056Z - info: Using extension licensing@3.0.3
+2023-04-28T19:15:16.077Z - info: Using extension localization@3.2.2
+2023-04-28T19:15:16.080Z - info: Using extension npm@3.1.2
+2023-04-28T19:15:16.087Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:15:16.096Z - info: Using extension reports@3.1.1
+2023-04-28T19:15:16.102Z - info: Using extension tags@3.1.1
+2023-04-28T19:15:16.107Z - info: Using extension text@3.0.0
+2023-04-28T19:15:16.110Z - info: Using extension version-control@3.1.2
+2023-04-28T19:15:16.135Z - info: Using extension assets@3.6.0
+2023-04-28T19:15:16.158Z - info: Using extension authorization@3.3.0
+2023-04-28T19:15:16.163Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:15:16.164Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:15:16.170Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:15:16.200Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:15:16.202Z - info: Using extension docx@3.7.1
+2023-04-28T19:15:16.209Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:15:16.389Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:15:16.391Z - info: Using extension pptx@3.4.0
+2023-04-28T19:15:16.397Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:15:16.452Z - info: Using extension scripts@3.4.1
+2023-04-28T19:15:16.455Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:15:16.456Z - info: Using extension studio@3.9.2
+2023-04-28T19:15:16.592Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:15:16.620Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:15:16.622Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:15:16.622Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:15:16.626Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:15:16.630Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:15:16.630Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:15:16.652Z - debug: studio default theme is: light
+2023-04-28T19:15:16.672Z - info: Creating default express app.
+2023-04-28T19:15:16.699Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:15:16.703Z - info: Verifying license key free
+2023-04-28T19:15:16.706Z - info: Using free license
+2023-04-28T19:15:16.721Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:15:16.722Z - info: Migration successful
+2023-04-28T19:15:16.724Z - debug: Creating samples is disabled
+2023-04-28T19:15:16.725Z - info: Initializing worker threads
+2023-04-28T19:15:16.726Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:15:16.962Z - info: 2 worker threads initialized in 237ms
+2023-04-28T19:15:16.962Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:15:16.963Z - info: reporter initialized
+2023-04-28T19:15:18.221Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:15:18.224Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:15:18.249Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:15:18.255Z - info: Found 35 extension(s)
+2023-04-28T19:15:18.313Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:15:18.338Z - debug: Discovered 35 extensions
+2023-04-28T19:15:18.411Z - info: Using extension authentication@3.4.0
+2023-04-28T19:15:18.518Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:15:18.519Z - info: Using extension base@3.0.1
+2023-04-28T19:15:18.523Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:15:18.525Z - info: Using extension cli@3.2.3
+2023-04-28T19:15:18.529Z - info: Using extension components@3.3.0
+2023-04-28T19:15:18.530Z - info: Using extension data@3.1.0
+2023-04-28T19:15:18.531Z - info: Using extension express@3.7.1
+2023-04-28T19:15:18.646Z - info: Using extension freeze@3.0.1
+2023-04-28T19:15:18.649Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:15:18.724Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:15:18.725Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:15:18.726Z - info: Using extension import-export@3.2.0
+2023-04-28T19:15:18.731Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:15:18.733Z - info: Using extension licensing@3.0.3
+2023-04-28T19:15:18.753Z - info: Using extension localization@3.2.2
+2023-04-28T19:15:18.755Z - info: Using extension npm@3.1.2
+2023-04-28T19:15:18.761Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:15:18.763Z - info: Using extension reports@3.1.1
+2023-04-28T19:15:18.766Z - info: Using extension tags@3.1.1
+2023-04-28T19:15:18.769Z - info: Using extension text@3.0.0
+2023-04-28T19:15:18.769Z - info: Using extension version-control@3.1.2
+2023-04-28T19:15:18.783Z - info: Using extension assets@3.6.0
+2023-04-28T19:15:18.795Z - info: Using extension authorization@3.3.0
+2023-04-28T19:15:18.797Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:15:18.797Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:15:18.799Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:15:18.822Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:15:18.823Z - info: Using extension docx@3.7.1
+2023-04-28T19:15:18.826Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:15:18.893Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:15:18.894Z - info: Using extension pptx@3.4.0
+2023-04-28T19:15:18.908Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:15:18.945Z - info: Using extension scripts@3.4.1
+2023-04-28T19:15:18.946Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:15:18.947Z - info: Using extension studio@3.9.2
+2023-04-28T19:15:19.037Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:15:19.054Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:15:19.057Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:15:19.057Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:15:19.062Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:15:19.065Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:15:19.065Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:15:19.086Z - debug: studio default theme is: light
+2023-04-28T19:15:19.102Z - info: Creating default express app.
+2023-04-28T19:15:19.119Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:15:19.123Z - info: Verifying license key free
+2023-04-28T19:15:19.126Z - info: Using free license
+2023-04-28T19:15:19.138Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:15:19.140Z - info: Migration successful
+2023-04-28T19:15:19.142Z - debug: Creating samples is disabled
+2023-04-28T19:15:19.144Z - info: Initializing worker threads
+2023-04-28T19:15:19.145Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:15:19.376Z - info: 2 worker threads initialized in 233ms
+2023-04-28T19:15:19.377Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:15:19.378Z - info: reporter initialized
+2023-04-28T19:16:07.166Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:16:07.171Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:16:07.182Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:16:07.189Z - info: Found 35 extension(s)
+2023-04-28T19:16:07.249Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:16:07.278Z - debug: Discovered 35 extensions
+2023-04-28T19:16:07.349Z - info: Using extension authentication@3.4.0
+2023-04-28T19:16:07.496Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:16:07.497Z - info: Using extension base@3.0.1
+2023-04-28T19:16:07.502Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:16:07.506Z - info: Using extension cli@3.2.3
+2023-04-28T19:16:07.512Z - info: Using extension components@3.3.0
+2023-04-28T19:16:07.513Z - info: Using extension data@3.1.0
+2023-04-28T19:16:07.514Z - info: Using extension express@3.7.1
+2023-04-28T19:16:07.749Z - info: Using extension freeze@3.0.1
+2023-04-28T19:16:07.753Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:16:07.837Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:16:07.837Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:16:07.839Z - info: Using extension import-export@3.2.0
+2023-04-28T19:16:07.844Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:16:07.845Z - info: Using extension licensing@3.0.3
+2023-04-28T19:16:07.858Z - info: Using extension localization@3.2.2
+2023-04-28T19:16:07.859Z - info: Using extension npm@3.1.2
+2023-04-28T19:16:07.865Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:16:07.868Z - info: Using extension reports@3.1.1
+2023-04-28T19:16:07.871Z - info: Using extension tags@3.1.1
+2023-04-28T19:16:07.876Z - info: Using extension text@3.0.0
+2023-04-28T19:16:07.877Z - info: Using extension version-control@3.1.2
+2023-04-28T19:16:07.889Z - info: Using extension assets@3.6.0
+2023-04-28T19:16:07.901Z - info: Using extension authorization@3.3.0
+2023-04-28T19:16:07.904Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:16:07.905Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:16:07.908Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:16:07.931Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:16:07.932Z - info: Using extension docx@3.7.1
+2023-04-28T19:16:07.935Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:16:08.032Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:16:08.032Z - info: Using extension pptx@3.4.0
+2023-04-28T19:16:08.038Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:16:08.091Z - info: Using extension scripts@3.4.1
+2023-04-28T19:16:08.092Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:16:08.094Z - info: Using extension studio@3.9.2
+2023-04-28T19:16:08.242Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:16:08.264Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:16:08.267Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:16:08.267Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:16:08.275Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:16:08.279Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:16:08.279Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:16:08.320Z - debug: studio default theme is: light
+2023-04-28T19:16:08.338Z - info: Creating default express app.
+2023-04-28T19:16:08.362Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:16:08.366Z - info: Verifying license key free
+2023-04-28T19:16:08.371Z - info: Using free license
+2023-04-28T19:16:08.382Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:16:08.383Z - info: Migration successful
+2023-04-28T19:16:08.385Z - debug: Creating samples is disabled
+2023-04-28T19:16:08.388Z - info: Initializing worker threads
+2023-04-28T19:16:08.388Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:16:08.711Z - info: 2 worker threads initialized in 324ms
+2023-04-28T19:16:08.712Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:16:08.713Z - info: reporter initialized
+2023-04-28T19:16:42.542Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:16:42.547Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:16:42.602Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:16:42.609Z - info: Found 35 extension(s)
+2023-04-28T19:16:42.678Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:16:42.682Z - debug: Discovered 35 extensions
+2023-04-28T19:16:42.764Z - info: Using extension authentication@3.4.0
+2023-04-28T19:16:42.920Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:16:42.921Z - info: Using extension base@3.0.1
+2023-04-28T19:16:42.925Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:16:42.926Z - info: Using extension cli@3.2.3
+2023-04-28T19:16:42.928Z - info: Using extension components@3.3.0
+2023-04-28T19:16:42.929Z - info: Using extension data@3.1.0
+2023-04-28T19:16:42.930Z - info: Using extension express@3.7.1
+2023-04-28T19:16:43.055Z - info: Using extension freeze@3.0.1
+2023-04-28T19:16:43.057Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:16:43.124Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:16:43.125Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:16:43.128Z - info: Using extension import-export@3.2.0
+2023-04-28T19:16:43.136Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:16:43.137Z - info: Using extension licensing@3.0.3
+2023-04-28T19:16:43.156Z - info: Using extension localization@3.2.2
+2023-04-28T19:16:43.157Z - info: Using extension npm@3.1.2
+2023-04-28T19:16:43.162Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:16:43.169Z - info: Using extension reports@3.1.1
+2023-04-28T19:16:43.178Z - info: Using extension tags@3.1.1
+2023-04-28T19:16:43.186Z - info: Using extension text@3.0.0
+2023-04-28T19:16:43.188Z - info: Using extension version-control@3.1.2
+2023-04-28T19:16:43.203Z - info: Using extension assets@3.6.0
+2023-04-28T19:16:43.221Z - info: Using extension authorization@3.3.0
+2023-04-28T19:16:43.225Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:16:43.226Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:16:43.231Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:16:43.257Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:16:43.258Z - info: Using extension docx@3.7.1
+2023-04-28T19:16:43.261Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:16:43.351Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:16:43.351Z - info: Using extension pptx@3.4.0
+2023-04-28T19:16:43.353Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:16:43.382Z - info: Using extension scripts@3.4.1
+2023-04-28T19:16:43.384Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:16:43.385Z - info: Using extension studio@3.9.2
+2023-04-28T19:16:43.477Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:16:43.502Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:16:43.505Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:16:43.505Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:16:43.509Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:16:43.511Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:16:43.512Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:16:43.537Z - debug: studio default theme is: light
+2023-04-28T19:16:43.564Z - info: Creating default express app.
+2023-04-28T19:16:43.604Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:16:43.616Z - info: Verifying license key free
+2023-04-28T19:16:43.619Z - info: Using free license
+2023-04-28T19:16:43.637Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:16:43.639Z - info: Migration successful
+2023-04-28T19:16:43.642Z - debug: Creating samples is disabled
+2023-04-28T19:16:43.645Z - info: Initializing worker threads
+2023-04-28T19:16:43.646Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:16:44.135Z - info: 2 worker threads initialized in 491ms
+2023-04-28T19:16:44.136Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:16:44.137Z - info: reporter initialized
+2023-04-28T19:24:43.842Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:24:43.845Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:24:43.853Z - info: Extensions location cache /tmp/jsreport/core/locations.json contains older information, crawling
+2023-04-28T19:24:44.096Z - info: Found 36 extension(s)
+2023-04-28T19:24:44.143Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:24:44.163Z - debug: Discovered 36 extensions
+2023-04-28T19:24:44.241Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:24:44.243Z - info: Using extension authentication@3.4.0
+2023-04-28T19:24:44.352Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:24:44.352Z - info: Using extension base@3.0.1
+2023-04-28T19:24:44.356Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:24:44.357Z - info: Using extension cli@3.2.3
+2023-04-28T19:24:44.360Z - info: Using extension components@3.3.0
+2023-04-28T19:24:44.362Z - info: Using extension data@3.1.0
+2023-04-28T19:24:44.363Z - info: Using extension express@3.7.1
+2023-04-28T19:24:44.491Z - info: Using extension freeze@3.0.1
+2023-04-28T19:24:44.493Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:24:44.564Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:24:44.565Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:24:44.566Z - info: Using extension import-export@3.2.0
+2023-04-28T19:24:44.572Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:24:44.573Z - info: Using extension licensing@3.0.3
+2023-04-28T19:24:44.586Z - info: Using extension localization@3.2.2
+2023-04-28T19:24:44.587Z - info: Using extension npm@3.1.2
+2023-04-28T19:24:44.590Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:24:44.592Z - info: Using extension reports@3.1.1
+2023-04-28T19:24:44.595Z - info: Using extension tags@3.1.1
+2023-04-28T19:24:44.597Z - info: Using extension text@3.0.0
+2023-04-28T19:24:44.598Z - info: Using extension version-control@3.1.2
+2023-04-28T19:24:44.611Z - info: Using extension assets@3.6.0
+2023-04-28T19:24:44.625Z - info: Using extension authorization@3.3.0
+2023-04-28T19:24:44.629Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:24:44.629Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:24:44.633Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:24:44.637Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:24:44.638Z - info: Using extension docx@3.7.1
+2023-04-28T19:24:44.642Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:24:44.721Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:24:44.721Z - info: Using extension pptx@3.4.0
+2023-04-28T19:24:44.722Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:24:44.757Z - info: Using extension scripts@3.4.1
+2023-04-28T19:24:44.759Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:24:44.761Z - info: Using extension studio@3.9.2
+2023-04-28T19:24:44.860Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:24:44.875Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:24:44.876Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:24:44.876Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:24:44.878Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:24:44.879Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:24:44.879Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:24:44.894Z - debug: studio default theme is: light
+2023-04-28T19:24:44.908Z - info: Creating default express app.
+2023-04-28T19:24:44.931Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:24:44.935Z - info: Verifying license key free
+2023-04-28T19:24:44.937Z - info: Using free license
+2023-04-28T19:24:44.946Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:24:44.947Z - info: Migration successful
+2023-04-28T19:24:44.949Z - debug: Creating samples is disabled
+2023-04-28T19:24:44.951Z - info: Initializing worker threads
+2023-04-28T19:24:44.951Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:24:45.168Z - info: 2 worker threads initialized in 218ms
+2023-04-28T19:24:45.169Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:24:45.169Z - info: reporter initialized
+2023-04-28T19:26:38.570Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:26:38.573Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:26:38.581Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:26:38.587Z - info: Found 36 extension(s)
+2023-04-28T19:26:38.648Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:26:38.689Z - debug: Discovered 36 extensions
+2023-04-28T19:26:38.763Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:26:38.765Z - info: Using extension authentication@3.4.0
+2023-04-28T19:26:38.886Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:26:38.887Z - info: Using extension base@3.0.1
+2023-04-28T19:26:38.890Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:26:38.892Z - info: Using extension cli@3.2.3
+2023-04-28T19:26:38.894Z - info: Using extension components@3.3.0
+2023-04-28T19:26:38.895Z - info: Using extension data@3.1.0
+2023-04-28T19:26:38.896Z - info: Using extension express@3.7.1
+2023-04-28T19:26:39.019Z - info: Using extension freeze@3.0.1
+2023-04-28T19:26:39.021Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:26:39.093Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:26:39.093Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:26:39.094Z - info: Using extension import-export@3.2.0
+2023-04-28T19:26:39.099Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:26:39.099Z - info: Using extension licensing@3.0.3
+2023-04-28T19:26:39.113Z - info: Using extension localization@3.2.2
+2023-04-28T19:26:39.114Z - info: Using extension npm@3.1.2
+2023-04-28T19:26:39.120Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:26:39.123Z - info: Using extension reports@3.1.1
+2023-04-28T19:26:39.126Z - info: Using extension tags@3.1.1
+2023-04-28T19:26:39.127Z - info: Using extension text@3.0.0
+2023-04-28T19:26:39.128Z - info: Using extension version-control@3.1.2
+2023-04-28T19:26:39.141Z - info: Using extension assets@3.6.0
+2023-04-28T19:26:39.157Z - info: Using extension authorization@3.3.0
+2023-04-28T19:26:39.160Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:26:39.161Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:26:39.163Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:26:39.187Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:26:39.189Z - info: Using extension docx@3.7.1
+2023-04-28T19:26:39.195Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:26:39.279Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:26:39.279Z - info: Using extension pptx@3.4.0
+2023-04-28T19:26:39.289Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:26:39.322Z - info: Using extension scripts@3.4.1
+2023-04-28T19:26:39.324Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:26:39.325Z - info: Using extension studio@3.9.2
+2023-04-28T19:26:39.434Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:26:39.450Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:26:39.452Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:26:39.452Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:26:39.454Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:26:39.455Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:26:39.455Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:26:39.476Z - debug: studio default theme is: light
+2023-04-28T19:26:39.495Z - info: Creating default express app.
+2023-04-28T19:26:39.524Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:26:39.529Z - info: Verifying license key free
+2023-04-28T19:26:39.532Z - info: Using free license
+2023-04-28T19:26:39.545Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:26:39.547Z - info: Migration successful
+2023-04-28T19:26:39.549Z - debug: Creating samples is disabled
+2023-04-28T19:26:39.551Z - info: Initializing worker threads
+2023-04-28T19:26:39.551Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:26:39.796Z - info: 2 worker threads initialized in 245ms
+2023-04-28T19:26:39.796Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:26:39.797Z - info: reporter initialized
+2023-04-28T19:28:16.619Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:28:16.623Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:28:16.622Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:28:16.624Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:28:16.633Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:28:16.669Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:28:16.639Z - info: Found 36 extension(s)
+2023-04-28T19:28:16.675Z - info: Found 36 extension(s)
+2023-04-28T19:28:16.705Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:28:16.718Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:28:16.734Z - debug: Discovered 36 extensions
+2023-04-28T19:28:16.737Z - debug: Discovered 36 extensions
+2023-04-28T19:28:16.817Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:28:17.221Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:28:16.820Z - info: Using extension authentication@3.4.0
+2023-04-28T19:28:16.934Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:28:16.935Z - info: Using extension base@3.0.1
+2023-04-28T19:28:16.938Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:28:16.939Z - info: Using extension cli@3.2.3
+2023-04-28T19:28:16.942Z - info: Using extension components@3.3.0
+2023-04-28T19:28:16.945Z - info: Using extension data@3.1.0
+2023-04-28T19:28:16.948Z - info: Using extension express@3.7.1
+2023-04-28T19:28:17.069Z - info: Using extension freeze@3.0.1
+2023-04-28T19:28:17.071Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:28:17.142Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:28:17.143Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:28:17.144Z - info: Using extension import-export@3.2.0
+2023-04-28T19:28:17.148Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:28:17.149Z - info: Using extension licensing@3.0.3
+2023-04-28T19:28:17.162Z - info: Using extension localization@3.2.2
+2023-04-28T19:28:17.164Z - info: Using extension npm@3.1.2
+2023-04-28T19:28:17.222Z - info: Using extension authentication@3.4.0
+2023-04-28T19:28:17.225Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:28:17.225Z - info: Using extension base@3.0.1
+2023-04-28T19:28:17.226Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:28:17.227Z - info: Using extension cli@3.2.3
+2023-04-28T19:28:17.228Z - info: Using extension components@3.3.0
+2023-04-28T19:28:17.228Z - info: Using extension data@3.1.0
+2023-04-28T19:28:17.228Z - info: Using extension express@3.7.1
+2023-04-28T19:28:17.230Z - info: Using extension freeze@3.0.1
+2023-04-28T19:28:17.234Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:28:17.237Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:28:17.237Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:28:17.238Z - info: Using extension import-export@3.2.0
+2023-04-28T19:28:17.239Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:28:17.239Z - info: Using extension licensing@3.0.3
+2023-04-28T19:28:17.240Z - info: Using extension localization@3.2.2
+2023-04-28T19:28:17.241Z - info: Using extension npm@3.1.2
+2023-04-28T19:28:17.247Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:28:17.252Z - info: Using extension reports@3.1.1
+2023-04-28T19:28:17.258Z - info: Using extension tags@3.1.1
+2023-04-28T19:28:17.262Z - info: Using extension text@3.0.0
+2023-04-28T19:28:17.263Z - info: Using extension version-control@3.1.2
+2023-04-28T19:28:17.283Z - info: Using extension assets@3.6.0
+2023-04-28T19:28:17.304Z - info: Using extension authorization@3.3.0
+2023-04-28T19:28:17.308Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:28:17.309Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:28:17.313Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:28:17.338Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:28:17.340Z - info: Using extension docx@3.7.1
+2023-04-28T19:28:17.346Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:28:17.424Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:28:17.424Z - info: Using extension pptx@3.4.0
+2023-04-28T19:28:17.426Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:28:17.455Z - info: Using extension scripts@3.4.1
+2023-04-28T19:28:17.456Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:28:17.457Z - info: Using extension studio@3.9.2
+2023-04-28T19:28:17.549Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:28:17.566Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:28:17.568Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:28:17.568Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:28:17.571Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:28:17.572Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:28:17.573Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:28:17.588Z - debug: studio default theme is: light
+2023-04-28T19:28:17.604Z - info: Creating default express app.
+2023-04-28T19:28:17.627Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:28:17.629Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:28:17.706Z - info: Verifying license key free
+2023-04-28T19:28:17.632Z - info: Using extension reports@3.1.1
+2023-04-28T19:28:17.634Z - info: Using extension tags@3.1.1
+2023-04-28T19:28:17.635Z - info: Using extension text@3.0.0
+2023-04-28T19:28:17.635Z - info: Using extension version-control@3.1.2
+2023-04-28T19:28:17.636Z - info: Using extension assets@3.6.0
+2023-04-28T19:28:17.636Z - info: Using extension authorization@3.3.0
+2023-04-28T19:28:17.637Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:28:17.637Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:28:17.637Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:28:17.639Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:28:17.639Z - info: Using extension docx@3.7.1
+2023-04-28T19:28:17.641Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:28:17.642Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:28:17.643Z - info: Using extension pptx@3.4.0
+2023-04-28T19:28:17.644Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:28:17.648Z - info: Using extension scripts@3.4.1
+2023-04-28T19:28:17.650Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:28:17.650Z - info: Using extension studio@3.9.2
+2023-04-28T19:28:17.675Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:28:17.676Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:28:17.677Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:28:17.677Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:28:17.679Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:28:17.680Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:28:17.681Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:28:17.689Z - debug: studio default theme is: light
+2023-04-28T19:28:17.695Z - info: Creating default express app.
+2023-04-28T19:28:17.704Z - info: jsreport server successfully started on http port: 3000
+2023-04-28T19:28:17.708Z - info: Using free license
+2023-04-28T19:28:17.717Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:28:17.719Z - info: Migration successful
+2023-04-28T19:28:17.721Z - debug: Creating samples is disabled
+2023-04-28T19:28:17.722Z - info: Initializing worker threads
+2023-04-28T19:28:17.723Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:28:17.707Z - info: Verifying license key free
+2023-04-28T19:28:17.740Z - info: Using free license
+2023-04-28T19:28:17.774Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:28:17.777Z - info: Migration successful
+2023-04-28T19:28:17.777Z - debug: Creating samples is disabled
+2023-04-28T19:28:17.778Z - info: Initializing worker threads
+2023-04-28T19:28:17.778Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:28:18.245Z - info: 2 worker threads initialized in 466ms
+2023-04-28T19:28:18.246Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:28:18.247Z - info: reporter initialized
+2023-04-28T19:28:18.257Z - info: 2 worker threads initialized in 535ms
+2023-04-28T19:28:18.258Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:28:18.259Z - info: reporter initialized
+2023-04-28T19:29:40.799Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:29:40.807Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:29:40.804Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:29:40.808Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:29:40.881Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:29:40.927Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:29:40.896Z - info: Found 36 extension(s)
+2023-04-28T19:29:40.936Z - info: Found 36 extension(s)
+2023-04-28T19:29:40.994Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:29:41.008Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:29:41.017Z - debug: Discovered 36 extensions
+2023-04-28T19:29:41.027Z - debug: Discovered 36 extensions
+2023-04-28T19:29:41.144Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:29:41.771Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:29:41.149Z - info: Using extension authentication@3.4.0
+2023-04-28T19:29:41.329Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:29:41.330Z - info: Using extension base@3.0.1
+2023-04-28T19:29:41.335Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:29:41.337Z - info: Using extension cli@3.2.3
+2023-04-28T19:29:41.340Z - info: Using extension components@3.3.0
+2023-04-28T19:29:41.345Z - info: Using extension data@3.1.0
+2023-04-28T19:29:41.351Z - info: Using extension express@3.7.1
+2023-04-28T19:29:41.555Z - info: Using extension freeze@3.0.1
+2023-04-28T19:29:41.559Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:29:41.658Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:29:41.659Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:29:41.663Z - info: Using extension import-export@3.2.0
+2023-04-28T19:29:41.671Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:29:41.673Z - info: Using extension licensing@3.0.3
+2023-04-28T19:29:41.694Z - info: Using extension localization@3.2.2
+2023-04-28T19:29:41.696Z - info: Using extension npm@3.1.2
+2023-04-28T19:29:41.772Z - info: Using extension authentication@3.4.0
+2023-04-28T19:29:41.779Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:29:41.780Z - info: Using extension base@3.0.1
+2023-04-28T19:29:41.782Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:29:41.783Z - info: Using extension cli@3.2.3
+2023-04-28T19:29:41.786Z - info: Using extension components@3.3.0
+2023-04-28T19:29:41.787Z - info: Using extension data@3.1.0
+2023-04-28T19:29:41.787Z - info: Using extension express@3.7.1
+2023-04-28T19:29:41.792Z - info: Using extension freeze@3.0.1
+2023-04-28T19:29:41.794Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:29:41.806Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:29:41.807Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:29:41.808Z - info: Using extension import-export@3.2.0
+2023-04-28T19:29:41.808Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:29:41.809Z - info: Using extension licensing@3.0.3
+2023-04-28T19:29:41.810Z - info: Using extension localization@3.2.2
+2023-04-28T19:29:41.810Z - info: Using extension npm@3.1.2
+2023-04-28T19:29:41.815Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:29:41.821Z - info: Using extension reports@3.1.1
+2023-04-28T19:29:41.829Z - info: Using extension tags@3.1.1
+2023-04-28T19:29:41.834Z - info: Using extension text@3.0.0
+2023-04-28T19:29:41.835Z - info: Using extension version-control@3.1.2
+2023-04-28T19:29:41.852Z - info: Using extension assets@3.6.0
+2023-04-28T19:29:41.867Z - info: Using extension authorization@3.3.0
+2023-04-28T19:29:41.871Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:29:41.872Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:29:41.876Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:29:41.897Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:29:41.899Z - info: Using extension docx@3.7.1
+2023-04-28T19:29:41.905Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:29:42.016Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:29:42.017Z - info: Using extension pptx@3.4.0
+2023-04-28T19:29:42.020Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:29:42.068Z - info: Using extension scripts@3.4.1
+2023-04-28T19:29:42.072Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:29:42.074Z - info: Using extension studio@3.9.2
+2023-04-28T19:29:42.217Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:29:42.239Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:29:42.242Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:29:42.243Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:29:42.247Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:29:42.250Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:29:42.251Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:29:42.269Z - debug: studio default theme is: light
+2023-04-28T19:29:42.289Z - info: Creating default express app.
+2023-04-28T19:29:42.315Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:29:42.329Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:29:42.332Z - info: Using extension reports@3.1.1
+2023-04-28T19:29:42.336Z - info: Using extension tags@3.1.1
+2023-04-28T19:29:42.340Z - info: Using extension text@3.0.0
+2023-04-28T19:29:42.342Z - info: Using extension version-control@3.1.2
+2023-04-28T19:29:42.346Z - info: Using extension assets@3.6.0
+2023-04-28T19:29:42.350Z - info: Using extension authorization@3.3.0
+2023-04-28T19:29:42.351Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:29:42.352Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:29:42.357Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:29:42.364Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:29:42.364Z - info: Using extension docx@3.7.1
+2023-04-28T19:29:42.366Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:29:42.384Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:29:42.385Z - info: Using extension pptx@3.4.0
+2023-04-28T19:29:42.386Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:29:42.391Z - info: Using extension scripts@3.4.1
+2023-04-28T19:29:42.391Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:29:42.392Z - info: Using extension studio@3.9.2
+2023-04-28T19:29:42.424Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:29:42.427Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:29:42.428Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:29:42.428Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:29:42.430Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:29:42.432Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:29:42.432Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:29:42.442Z - debug: studio default theme is: light
+2023-04-28T19:29:42.455Z - info: Creating default express app.
+2023-04-28T19:29:42.477Z - error: Error when starting http server on port 3001 Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T19:29:42.477Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at Server.listen (node:net:1876:7)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:16:10)
+    at /home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:50:14
+    at Object.start (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:125:13)
+    at Object.<anonymous> (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-express/lib/main.js:333:30)
+    at async ListenerCollection.fire (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/shared/listenerCollection.js:157:21)
+2023-04-28T19:29:42.493Z - info: Verifying license key free
+2023-04-28T19:30:00.189Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:30:00.197Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:30:00.194Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:30:00.198Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:30:00.212Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:30:00.268Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:30:00.219Z - info: Found 36 extension(s)
+2023-04-28T19:30:00.276Z - info: Found 36 extension(s)
+2023-04-28T19:30:00.319Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:30:00.342Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:30:00.369Z - debug: Discovered 36 extensions
+2023-04-28T19:30:00.374Z - debug: Discovered 36 extensions
+2023-04-28T19:30:00.509Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:30:01.090Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:30:00.511Z - info: Using extension authentication@3.4.0
+2023-04-28T19:30:00.711Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:30:00.713Z - info: Using extension base@3.0.1
+2023-04-28T19:30:00.717Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:30:00.720Z - info: Using extension cli@3.2.3
+2023-04-28T19:30:00.724Z - info: Using extension components@3.3.0
+2023-04-28T19:30:00.728Z - info: Using extension data@3.1.0
+2023-04-28T19:30:00.729Z - info: Using extension express@3.7.1
+2023-04-28T19:30:00.894Z - info: Using extension freeze@3.0.1
+2023-04-28T19:30:00.896Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:30:00.992Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:30:00.993Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:30:00.994Z - info: Using extension import-export@3.2.0
+2023-04-28T19:30:00.999Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:30:01.000Z - info: Using extension licensing@3.0.3
+2023-04-28T19:30:01.018Z - info: Using extension localization@3.2.2
+2023-04-28T19:30:01.020Z - info: Using extension npm@3.1.2
+2023-04-28T19:30:01.091Z - info: Using extension authentication@3.4.0
+2023-04-28T19:30:01.096Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:30:01.097Z - info: Using extension base@3.0.1
+2023-04-28T19:30:01.099Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:30:01.101Z - info: Using extension cli@3.2.3
+2023-04-28T19:30:01.103Z - info: Using extension components@3.3.0
+2023-04-28T19:30:01.104Z - info: Using extension data@3.1.0
+2023-04-28T19:30:01.105Z - info: Using extension express@3.7.1
+2023-04-28T19:30:01.108Z - info: Using extension freeze@3.0.1
+2023-04-28T19:30:01.109Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:30:01.119Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:30:01.120Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:30:01.123Z - info: Using extension import-export@3.2.0
+2023-04-28T19:30:01.124Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:30:01.124Z - info: Using extension licensing@3.0.3
+2023-04-28T19:30:01.125Z - info: Using extension localization@3.2.2
+2023-04-28T19:30:01.125Z - info: Using extension npm@3.1.2
+2023-04-28T19:30:01.130Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:30:01.133Z - info: Using extension reports@3.1.1
+2023-04-28T19:30:01.139Z - info: Using extension tags@3.1.1
+2023-04-28T19:30:01.143Z - info: Using extension text@3.0.0
+2023-04-28T19:30:01.146Z - info: Using extension version-control@3.1.2
+2023-04-28T19:30:01.162Z - info: Using extension assets@3.6.0
+2023-04-28T19:30:01.179Z - info: Using extension authorization@3.3.0
+2023-04-28T19:30:01.188Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:30:01.189Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:30:01.193Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:30:01.218Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:30:01.219Z - info: Using extension docx@3.7.1
+2023-04-28T19:30:01.224Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:30:01.310Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:30:01.310Z - info: Using extension pptx@3.4.0
+2023-04-28T19:30:01.312Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:30:01.348Z - info: Using extension scripts@3.4.1
+2023-04-28T19:30:01.350Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:30:01.351Z - info: Using extension studio@3.9.2
+2023-04-28T19:30:01.464Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:30:01.483Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:30:01.485Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:30:01.486Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:30:01.490Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:30:01.492Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:30:01.493Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:30:01.514Z - debug: studio default theme is: light
+2023-04-28T19:30:01.531Z - info: Creating default express app.
+2023-04-28T19:30:01.554Z - info: jsreport server successfully started on http port: 3000
+2023-04-28T19:30:01.568Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:30:01.700Z - info: Verifying license key free
+2023-04-28T19:30:01.572Z - info: Using extension reports@3.1.1
+2023-04-28T19:30:01.576Z - info: Using extension tags@3.1.1
+2023-04-28T19:30:01.578Z - info: Using extension text@3.0.0
+2023-04-28T19:30:01.579Z - info: Using extension version-control@3.1.2
+2023-04-28T19:30:01.581Z - info: Using extension assets@3.6.0
+2023-04-28T19:30:01.583Z - info: Using extension authorization@3.3.0
+2023-04-28T19:30:01.584Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:30:01.584Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:30:01.586Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:30:01.591Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:30:01.592Z - info: Using extension docx@3.7.1
+2023-04-28T19:30:01.595Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:30:01.598Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:30:01.598Z - info: Using extension pptx@3.4.0
+2023-04-28T19:30:01.600Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:30:01.607Z - info: Using extension scripts@3.4.1
+2023-04-28T19:30:01.608Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:30:01.608Z - info: Using extension studio@3.9.2
+2023-04-28T19:30:01.660Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:30:01.663Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:30:01.663Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:30:01.664Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:30:01.665Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:30:01.667Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:30:01.667Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:30:01.675Z - debug: studio default theme is: light
+2023-04-28T19:30:01.682Z - info: Creating default express app.
+2023-04-28T19:30:01.699Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:30:01.703Z - info: Using free license
+2023-04-28T19:30:01.709Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:30:01.710Z - info: Migration successful
+2023-04-28T19:30:01.712Z - debug: Creating samples is disabled
+2023-04-28T19:30:01.714Z - info: Initializing worker threads
+2023-04-28T19:30:01.714Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:30:02.797Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:30:02.801Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:30:02.854Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:30:02.862Z - info: Found 36 extension(s)
+2023-04-28T19:30:02.926Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:30:02.928Z - debug: Discovered 36 extensions
+2023-04-28T19:30:03.006Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:30:03.008Z - info: Using extension authentication@3.4.0
+2023-04-28T19:30:03.139Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:30:03.140Z - info: Using extension base@3.0.1
+2023-04-28T19:30:03.146Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:30:03.151Z - info: Using extension cli@3.2.3
+2023-04-28T19:30:03.154Z - info: Using extension components@3.3.0
+2023-04-28T19:30:03.156Z - info: Using extension data@3.1.0
+2023-04-28T19:30:03.157Z - info: Using extension express@3.7.1
+2023-04-28T19:30:03.283Z - info: Using extension freeze@3.0.1
+2023-04-28T19:30:03.285Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:30:03.376Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:30:03.377Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:30:03.378Z - info: Using extension import-export@3.2.0
+2023-04-28T19:30:03.382Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:30:03.383Z - info: Using extension licensing@3.0.3
+2023-04-28T19:30:03.400Z - info: Using extension localization@3.2.2
+2023-04-28T19:30:03.401Z - info: Using extension npm@3.1.2
+2023-04-28T19:30:03.407Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:30:03.411Z - info: Using extension reports@3.1.1
+2023-04-28T19:30:03.414Z - info: Using extension tags@3.1.1
+2023-04-28T19:30:03.418Z - info: Using extension text@3.0.0
+2023-04-28T19:30:03.418Z - info: Using extension version-control@3.1.2
+2023-04-28T19:30:03.430Z - info: Using extension assets@3.6.0
+2023-04-28T19:30:03.447Z - info: Using extension authorization@3.3.0
+2023-04-28T19:30:03.451Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:30:03.452Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:30:03.454Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:30:03.457Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:30:03.458Z - info: Using extension docx@3.7.1
+2023-04-28T19:30:03.463Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:30:03.540Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:30:03.541Z - info: Using extension pptx@3.4.0
+2023-04-28T19:30:03.543Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:30:03.575Z - info: Using extension scripts@3.4.1
+2023-04-28T19:30:03.576Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:30:03.577Z - info: Using extension studio@3.9.2
+2023-04-28T19:30:03.691Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:30:03.710Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:30:03.720Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:30:03.721Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:30:03.723Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:30:03.726Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:30:03.727Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:30:03.757Z - debug: studio default theme is: light
+2023-04-28T19:30:03.784Z - info: Creating default express app.
+2023-04-28T19:30:03.817Z - info: jsreport server successfully started on http port: 3001
+2023-04-28T19:30:03.821Z - info: Verifying license key free
+2023-04-28T19:30:03.822Z - info: Using free license
+2023-04-28T19:30:03.833Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:30:03.834Z - info: Migration successful
+2023-04-28T19:30:03.836Z - debug: Creating samples is disabled
+2023-04-28T19:30:03.837Z - info: Initializing worker threads
+2023-04-28T19:30:03.838Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:30:04.169Z - info: 2 worker threads initialized in 332ms
+2023-04-28T19:30:04.170Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:30:04.171Z - info: reporter initialized
+2023-04-28T19:35:06.478Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:35:06.481Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:35:06.501Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:35:06.511Z - info: Found 36 extension(s)
+2023-04-28T19:35:06.564Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:35:06.613Z - debug: Discovered 36 extensions
+2023-04-28T19:35:06.702Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:35:06.705Z - info: Using extension authentication@3.4.0
+2023-04-28T19:35:06.833Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:35:06.834Z - info: Using extension base@3.0.1
+2023-04-28T19:35:06.837Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:35:06.838Z - info: Using extension cli@3.2.3
+2023-04-28T19:35:06.841Z - info: Using extension components@3.3.0
+2023-04-28T19:35:06.843Z - info: Using extension data@3.1.0
+2023-04-28T19:35:06.846Z - info: Using extension express@3.7.1
+2023-04-28T19:35:06.979Z - info: Using extension freeze@3.0.1
+2023-04-28T19:35:06.981Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:35:07.060Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:35:07.061Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:35:07.063Z - info: Using extension import-export@3.2.0
+2023-04-28T19:35:07.068Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:35:07.069Z - info: Using extension licensing@3.0.3
+2023-04-28T19:35:07.084Z - info: Using extension localization@3.2.2
+2023-04-28T19:35:07.085Z - info: Using extension npm@3.1.2
+2023-04-28T19:35:07.089Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:35:07.093Z - info: Using extension reports@3.1.1
+2023-04-28T19:35:07.098Z - info: Using extension tags@3.1.1
+2023-04-28T19:35:07.102Z - info: Using extension text@3.0.0
+2023-04-28T19:35:07.103Z - info: Using extension version-control@3.1.2
+2023-04-28T19:35:07.119Z - info: Using extension assets@3.6.0
+2023-04-28T19:35:07.135Z - info: Using extension authorization@3.3.0
+2023-04-28T19:35:07.138Z - debug: Extension authorization@3.3.0 was disabled
+2023-04-28T19:35:07.139Z - info: Using extension browser-client@3.1.1
+2023-04-28T19:35:07.143Z - info: Using extension chrome-pdf@3.3.0
+2023-04-28T19:35:07.170Z - debug: Chrome strategy is chrome-pool, numberOfWorkers: 1
+2023-04-28T19:35:07.171Z - info: Using extension docx@3.7.1
+2023-04-28T19:35:07.175Z - info: Using extension html-to-xlsx@3.3.1
+2023-04-28T19:35:07.281Z - info: html-to-xlsx detected chrome as available html engine
+2023-04-28T19:35:07.281Z - info: Using extension pptx@3.4.0
+2023-04-28T19:35:07.293Z - info: Using extension scheduling@3.0.3
+2023-04-28T19:35:07.351Z - info: Using extension scripts@3.4.1
+2023-04-28T19:35:07.352Z - info: Using extension static-pdf@3.0.1
+2023-04-28T19:35:07.354Z - info: Using extension studio@3.9.2
+2023-04-28T19:35:07.488Z - info: Using extension xlsx@3.4.0
+2023-04-28T19:35:07.506Z - info: Using extension public-templates@3.0.0
+2023-04-28T19:35:07.510Z - debug: Extension public-templates@3.0.0 was disabled
+2023-04-28T19:35:07.511Z - info: Using extension sample-template@3.2.1
+2023-04-28T19:35:07.515Z - info: Using extension studio-theme-dark@3.0.1
+2023-04-28T19:35:07.517Z - info: Using general timeout for rendering (reportTimeout: 60000)
+2023-04-28T19:35:07.518Z - info: Using memory provider for template store. The saved templates will be lost after restart
+2023-04-28T19:35:07.545Z - debug: studio default theme is: light
+2023-04-28T19:35:07.565Z - info: Creating default express app.
+2023-04-28T19:35:07.591Z - info: jsreport server successfully started on http port: 3000
+2023-04-28T19:35:07.596Z - info: Verifying license key free
+2023-04-28T19:35:07.598Z - info: Using free license
+2023-04-28T19:35:07.610Z - info: Migrating templates chrome settings (waitForNetworkIddle -> waitForNetworkIdle)
+2023-04-28T19:35:07.612Z - info: Migration successful
+2023-04-28T19:35:07.615Z - debug: Creating samples is disabled
+2023-04-28T19:35:07.617Z - info: Initializing worker threads
+2023-04-28T19:35:07.617Z - debug: Extensions in workers: base, child-templates, components, data, express, handlebars, jsrender, localization, npm, pdf-utils, reports, text, version-control, assets, browser-client, chrome-pdf, docx, html-to-xlsx, pptx, scripts, static-pdf, studio, xlsx
+2023-04-28T19:35:07.927Z - info: 2 worker threads initialized in 310ms
+2023-04-28T19:35:07.928Z - info: Starting temp files cleanup with 180000ms threshold
+2023-04-28T19:35:07.929Z - info: reporter initialized
+2023-04-28T19:36:40.050Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:36:40.053Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:36:40.060Z - info: Extensions location cache /tmp/jsreport/core/locations.json contains older information, crawling
+2023-04-28T19:36:40.301Z - info: Found 36 extension(s)
+2023-04-28T19:36:40.351Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:36:40.375Z - debug: Discovered 36 extensions
+2023-04-28T19:36:40.441Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:36:40.444Z - info: Using extension authentication@3.4.0
+2023-04-28T19:36:40.554Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:36:40.555Z - info: Using extension base@3.0.1
+2023-04-28T19:36:40.558Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:36:40.560Z - info: Using extension cli@3.2.3
+2023-04-28T19:36:40.564Z - info: Using extension components@3.3.0
+2023-04-28T19:36:40.565Z - info: Using extension data@3.1.0
+2023-04-28T19:36:40.566Z - info: Using extension express@3.7.1
+2023-04-28T19:36:40.688Z - info: Using extension freeze@3.0.1
+2023-04-28T19:36:40.689Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:36:40.760Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:36:40.761Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:36:40.763Z - info: Using extension import-export@3.2.0
+2023-04-28T19:36:40.767Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:36:40.768Z - info: Using extension licensing@3.0.3
+2023-04-28T19:36:40.782Z - info: Using extension localization@3.2.2
+2023-04-28T19:36:40.783Z - info: Using extension npm@3.1.2
+2023-04-28T19:36:40.791Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:36:40.796Z - info: Using extension reports@3.1.1
+2023-04-28T19:36:40.801Z - info: Using extension tags@3.1.1
+2023-04-28T19:36:40.805Z - info: Using extension text@3.0.0
+2023-04-28T19:36:40.808Z - info: Using extension version-control@3.1.2
+2023-04-28T19:36:40.824Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:37:59.219Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:37:59.223Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:37:59.233Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:37:59.239Z - info: Found 36 extension(s)
+2023-04-28T19:37:59.302Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:37:59.348Z - debug: Discovered 36 extensions
+2023-04-28T19:37:59.426Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:37:59.429Z - info: Using extension authentication@3.4.0
+2023-04-28T19:37:59.580Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:37:59.581Z - info: Using extension base@3.0.1
+2023-04-28T19:37:59.585Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:37:59.587Z - info: Using extension cli@3.2.3
+2023-04-28T19:37:59.590Z - info: Using extension components@3.3.0
+2023-04-28T19:37:59.591Z - info: Using extension data@3.1.0
+2023-04-28T19:37:59.592Z - info: Using extension express@3.7.1
+2023-04-28T19:37:59.724Z - info: Using extension freeze@3.0.1
+2023-04-28T19:37:59.726Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:37:59.806Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:37:59.807Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:37:59.808Z - info: Using extension import-export@3.2.0
+2023-04-28T19:37:59.813Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:37:59.815Z - info: Using extension licensing@3.0.3
+2023-04-28T19:37:59.836Z - info: Using extension localization@3.2.2
+2023-04-28T19:37:59.837Z - info: Using extension npm@3.1.2
+2023-04-28T19:37:59.843Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:37:59.847Z - info: Using extension reports@3.1.1
+2023-04-28T19:37:59.854Z - info: Using extension tags@3.1.1
+2023-04-28T19:37:59.858Z - info: Using extension text@3.0.0
+2023-04-28T19:37:59.859Z - info: Using extension version-control@3.1.2
+2023-04-28T19:37:59.878Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:50:57.179Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:50:57.182Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:50:57.191Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:50:57.197Z - info: Found 36 extension(s)
+2023-04-28T19:50:57.266Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:50:57.285Z - debug: Discovered 36 extensions
+2023-04-28T19:50:57.362Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:50:57.364Z - info: Using extension authentication@3.4.0
+2023-04-28T19:50:57.480Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:50:57.480Z - info: Using extension base@3.0.1
+2023-04-28T19:50:57.484Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:50:57.485Z - info: Using extension cli@3.2.3
+2023-04-28T19:50:57.487Z - info: Using extension components@3.3.0
+2023-04-28T19:50:57.488Z - info: Using extension data@3.1.0
+2023-04-28T19:50:57.489Z - info: Using extension express@3.7.1
+2023-04-28T19:50:57.632Z - info: Using extension freeze@3.0.1
+2023-04-28T19:50:57.634Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:50:57.711Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:50:57.711Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:50:57.712Z - info: Using extension import-export@3.2.0
+2023-04-28T19:50:57.717Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:50:57.717Z - info: Using extension licensing@3.0.3
+2023-04-28T19:50:57.738Z - info: Using extension localization@3.2.2
+2023-04-28T19:50:57.741Z - info: Using extension npm@3.1.2
+2023-04-28T19:50:57.746Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:50:57.753Z - info: Using extension reports@3.1.1
+2023-04-28T19:50:57.762Z - info: Using extension tags@3.1.1
+2023-04-28T19:50:57.767Z - info: Using extension text@3.0.0
+2023-04-28T19:50:57.769Z - info: Using extension version-control@3.1.2
+2023-04-28T19:50:57.790Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:51:13.257Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:51:13.260Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:51:13.281Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:51:13.289Z - info: Found 36 extension(s)
+2023-04-28T19:51:13.353Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:51:13.367Z - debug: Discovered 36 extensions
+2023-04-28T19:51:13.438Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:51:13.439Z - info: Using extension authentication@3.4.0
+2023-04-28T19:51:13.549Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:51:13.550Z - info: Using extension base@3.0.1
+2023-04-28T19:51:13.553Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:51:13.554Z - info: Using extension cli@3.2.3
+2023-04-28T19:51:13.558Z - info: Using extension components@3.3.0
+2023-04-28T19:51:13.561Z - info: Using extension data@3.1.0
+2023-04-28T19:51:13.562Z - info: Using extension express@3.7.1
+2023-04-28T19:51:13.681Z - info: Using extension freeze@3.0.1
+2023-04-28T19:51:13.683Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:51:13.766Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:51:13.767Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:51:13.768Z - info: Using extension import-export@3.2.0
+2023-04-28T19:51:13.772Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:51:13.773Z - info: Using extension licensing@3.0.3
+2023-04-28T19:51:13.785Z - info: Using extension localization@3.2.2
+2023-04-28T19:51:13.786Z - info: Using extension npm@3.1.2
+2023-04-28T19:51:13.792Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:51:13.794Z - info: Using extension reports@3.1.1
+2023-04-28T19:51:13.796Z - info: Using extension tags@3.1.1
+2023-04-28T19:51:13.799Z - info: Using extension text@3.0.0
+2023-04-28T19:51:13.802Z - info: Using extension version-control@3.1.2
+2023-04-28T19:51:13.815Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:51:44.948Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:51:44.951Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:51:44.959Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:51:44.963Z - info: Found 36 extension(s)
+2023-04-28T19:51:45.035Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:51:45.056Z - debug: Discovered 36 extensions
+2023-04-28T19:51:45.127Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:51:45.129Z - info: Using extension authentication@3.4.0
+2023-04-28T19:51:45.244Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:51:45.245Z - info: Using extension base@3.0.1
+2023-04-28T19:51:45.248Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:51:45.250Z - info: Using extension cli@3.2.3
+2023-04-28T19:51:45.253Z - info: Using extension components@3.3.0
+2023-04-28T19:51:45.255Z - info: Using extension data@3.1.0
+2023-04-28T19:51:45.257Z - info: Using extension express@3.7.1
+2023-04-28T19:51:45.374Z - info: Using extension freeze@3.0.1
+2023-04-28T19:51:45.376Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:51:45.460Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:51:45.461Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:51:45.462Z - info: Using extension import-export@3.2.0
+2023-04-28T19:51:45.467Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:51:45.468Z - info: Using extension licensing@3.0.3
+2023-04-28T19:51:45.492Z - info: Using extension localization@3.2.2
+2023-04-28T19:51:45.494Z - info: Using extension npm@3.1.2
+2023-04-28T19:51:45.501Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:51:45.506Z - info: Using extension reports@3.1.1
+2023-04-28T19:51:45.512Z - info: Using extension tags@3.1.1
+2023-04-28T19:51:45.517Z - info: Using extension text@3.0.0
+2023-04-28T19:51:45.519Z - info: Using extension version-control@3.1.2
+2023-04-28T19:51:45.535Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:53:51.952Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:53:51.955Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:53:51.990Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:53:52.000Z - info: Found 36 extension(s)
+2023-04-28T19:53:52.066Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:53:52.100Z - debug: Discovered 36 extensions
+2023-04-28T19:53:52.178Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:53:52.181Z - info: Using extension authentication@3.4.0
+2023-04-28T19:53:52.318Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:53:52.319Z - info: Using extension base@3.0.1
+2023-04-28T19:53:52.322Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:53:52.324Z - info: Using extension cli@3.2.3
+2023-04-28T19:53:52.326Z - info: Using extension components@3.3.0
+2023-04-28T19:53:52.327Z - info: Using extension data@3.1.0
+2023-04-28T19:53:52.328Z - info: Using extension express@3.7.1
+2023-04-28T19:53:52.469Z - info: Using extension freeze@3.0.1
+2023-04-28T19:53:52.471Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:53:52.556Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:53:52.556Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:53:52.557Z - info: Using extension import-export@3.2.0
+2023-04-28T19:53:52.563Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:53:52.563Z - info: Using extension licensing@3.0.3
+2023-04-28T19:53:52.580Z - info: Using extension localization@3.2.2
+2023-04-28T19:53:52.583Z - info: Using extension npm@3.1.2
+2023-04-28T19:53:52.590Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:53:52.596Z - info: Using extension reports@3.1.1
+2023-04-28T19:53:52.600Z - info: Using extension tags@3.1.1
+2023-04-28T19:53:52.604Z - info: Using extension text@3.0.0
+2023-04-28T19:53:52.605Z - info: Using extension version-control@3.1.2
+2023-04-28T19:53:52.623Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:54:50.360Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:54:50.365Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:54:50.372Z - info: Extensions location cache /tmp/jsreport/core/locations.json contains older information, crawling
+2023-04-28T19:54:50.635Z - info: Found 36 extension(s)
+2023-04-28T19:54:50.675Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:54:50.699Z - debug: Discovered 36 extensions
+2023-04-28T19:54:50.755Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:54:50.756Z - info: Using extension authentication@3.4.0
+2023-04-28T19:54:50.866Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:54:50.867Z - info: Using extension base@3.0.1
+2023-04-28T19:54:50.871Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:54:50.874Z - info: Using extension cli@3.2.3
+2023-04-28T19:54:50.876Z - info: Using extension components@3.3.0
+2023-04-28T19:54:50.878Z - info: Using extension data@3.1.0
+2023-04-28T19:54:50.879Z - info: Using extension express@3.7.1
+2023-04-28T19:54:50.997Z - info: Using extension freeze@3.0.1
+2023-04-28T19:54:50.998Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:54:51.056Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:54:51.057Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:54:51.058Z - info: Using extension import-export@3.2.0
+2023-04-28T19:54:51.063Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:54:51.064Z - info: Using extension licensing@3.0.3
+2023-04-28T19:54:51.080Z - info: Using extension localization@3.2.2
+2023-04-28T19:54:51.081Z - info: Using extension npm@3.1.2
+2023-04-28T19:54:51.085Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:54:51.088Z - info: Using extension reports@3.1.1
+2023-04-28T19:54:51.091Z - info: Using extension tags@3.1.1
+2023-04-28T19:54:51.093Z - info: Using extension text@3.0.0
+2023-04-28T19:54:51.094Z - info: Using extension version-control@3.1.2
+2023-04-28T19:54:51.103Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:55:04.504Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:55:04.507Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:55:04.518Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:55:04.524Z - info: Found 36 extension(s)
+2023-04-28T19:55:04.597Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:55:04.646Z - debug: Discovered 36 extensions
+2023-04-28T19:55:04.740Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:55:04.744Z - info: Using extension authentication@3.4.0
+2023-04-28T19:55:04.882Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:55:04.882Z - info: Using extension base@3.0.1
+2023-04-28T19:55:04.886Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:55:04.887Z - info: Using extension cli@3.2.3
+2023-04-28T19:55:04.889Z - info: Using extension components@3.3.0
+2023-04-28T19:55:04.890Z - info: Using extension data@3.1.0
+2023-04-28T19:55:04.891Z - info: Using extension express@3.7.1
+2023-04-28T19:55:05.035Z - info: Using extension freeze@3.0.1
+2023-04-28T19:55:05.037Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:55:05.132Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:55:05.132Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:55:05.134Z - info: Using extension import-export@3.2.0
+2023-04-28T19:55:05.141Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:55:05.142Z - info: Using extension licensing@3.0.3
+2023-04-28T19:55:05.161Z - info: Using extension localization@3.2.2
+2023-04-28T19:55:05.164Z - info: Using extension npm@3.1.2
+2023-04-28T19:55:05.171Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:55:05.179Z - info: Using extension reports@3.1.1
+2023-04-28T19:55:05.185Z - info: Using extension tags@3.1.1
+2023-04-28T19:55:05.188Z - info: Using extension text@3.0.0
+2023-04-28T19:55:05.189Z - info: Using extension version-control@3.1.2
+2023-04-28T19:55:05.206Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:55:41.305Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:55:41.308Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:55:41.345Z - info: Extensions location cache contains up to date information, skipping crawling in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:55:41.353Z - info: Found 36 extension(s)
+2023-04-28T19:55:41.407Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:55:41.399Z - info: Initializing jsreport (version: 3.11.3, configuration file: none, nodejs: 18.14.2)
+2023-04-28T19:55:41.404Z - info: Searching for available extensions in /home/marcelo/Dev/otro/backend-app/
+2023-04-28T19:55:41.421Z - info: Extensions location cache doesn't contain entry yet, crawling
+2023-04-28T19:55:41.427Z - debug: Discovered 36 extensions
+2023-04-28T19:55:41.515Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:55:41.726Z - info: Found 36 extension(s)
+2023-04-28T19:55:41.776Z - debug: Writing extension locations cache to /tmp/jsreport/core/locations.json
+2023-04-28T19:55:41.822Z - debug: Discovered 36 extensions
+2023-04-28T19:55:41.922Z - info: Using anonymous extension at /home/marcelo/Dev/otro/backend-app
+2023-04-28T19:55:41.517Z - info: Using extension authentication@3.4.0
+2023-04-28T19:55:41.650Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:55:41.651Z - info: Using extension base@3.0.1
+2023-04-28T19:55:41.654Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:55:41.655Z - info: Using extension cli@3.2.3
+2023-04-28T19:55:41.657Z - info: Using extension components@3.3.0
+2023-04-28T19:55:41.658Z - info: Using extension data@3.1.0
+2023-04-28T19:55:41.659Z - info: Using extension express@3.7.1
+2023-04-28T19:55:41.827Z - info: Using extension freeze@3.0.1
+2023-04-28T19:55:41.833Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:55:41.926Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:55:41.927Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:55:41.931Z - info: Using extension import-export@3.2.0
+2023-04-28T19:55:41.938Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:55:41.940Z - info: Using extension licensing@3.0.3
+2023-04-28T19:55:41.954Z - info: Using extension localization@3.2.2
+2023-04-28T19:55:41.955Z - info: Using extension npm@3.1.2
+2023-04-28T19:55:41.959Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:55:41.963Z - info: Using extension reports@3.1.1
+2023-04-28T19:55:41.968Z - info: Using extension tags@3.1.1
+2023-04-28T19:55:41.973Z - info: Using extension text@3.0.0
+2023-04-28T19:55:41.975Z - info: Using extension version-control@3.1.2
+2023-04-28T19:55:41.987Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+2023-04-28T19:55:41.924Z - info: Using extension authentication@3.4.0
+2023-04-28T19:55:42.094Z - debug: Extension authentication@3.4.0 was disabled
+2023-04-28T19:55:42.095Z - info: Using extension base@3.0.1
+2023-04-28T19:55:42.101Z - info: Using extension child-templates@3.1.0
+2023-04-28T19:55:42.104Z - info: Using extension cli@3.2.3
+2023-04-28T19:55:42.109Z - info: Using extension components@3.3.0
+2023-04-28T19:55:42.111Z - info: Using extension data@3.1.0
+2023-04-28T19:55:42.112Z - info: Using extension express@3.7.1
+2023-04-28T19:55:42.225Z - info: Using extension freeze@3.0.1
+2023-04-28T19:55:42.227Z - info: Using extension fs-store@3.2.4
+2023-04-28T19:55:42.286Z - debug: Extension fs-store@3.2.4 was disabled
+2023-04-28T19:55:42.286Z - info: Using extension handlebars@3.2.1
+2023-04-28T19:55:42.288Z - info: Using extension import-export@3.2.0
+2023-04-28T19:55:42.293Z - info: Using extension jsrender@3.0.0
+2023-04-28T19:55:42.294Z - info: Using extension licensing@3.0.3
+2023-04-28T19:55:42.305Z - info: Using extension localization@3.2.2
+2023-04-28T19:55:42.306Z - info: Using extension npm@3.1.2
+2023-04-28T19:55:42.313Z - info: Using extension pdf-utils@3.9.0
+2023-04-28T19:55:42.315Z - info: Using extension reports@3.1.1
+2023-04-28T19:55:42.317Z - info: Using extension tags@3.1.1
+2023-04-28T19:55:42.318Z - info: Using extension text@3.0.0
+2023-04-28T19:55:42.319Z - info: Using extension version-control@3.1.2
+2023-04-28T19:55:42.327Z - error: Error occurred during reporter init: Error: Error when loading extension chrome-pdf@1.10.0
+Error: Extension "chrome-pdf" is not compatible with "core" extension. Missing ".requires" information in "chrome-pdf" definition
+    at validateMinimalVersion (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/validateMinimalVersion.js:24:11)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:158:9)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
+    at Object._useOne (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:248:15)
+    at Object._useMany (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/extensions/extensionsManager.js:99:38)
+    at async MainReporter.init (/home/marcelo/Dev/otro/backend-app/node_modules/@jsreport/jsreport-core/lib/main/reporter.js:216:7)
