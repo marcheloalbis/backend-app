@@ -61,16 +61,80 @@ El proyecto cuenta con documentación generada automáticamente con Swagger. Par
 http://localhost:3000/api-docs/
 ```
 
-## Manejo de suscripciones
+## Estructura del Proyecto
 
-El proyecto incluye un sistema de manejo de suscripciones basado en planes. Para utilizarlo, se deben seguir los siguientes pasos:
+El proyecto se divide en las siguientes carpetas:
 
-1. Crear los planes de suscripción en la base de datos, utilizando el modelo de datos definido en `src/models/subscription.js`.
-2. Utilizar el middleware `subscriptionMiddleware` en las rutas que se quieren proteger con suscripciones.
-3. Utilizar el controlador `subscribe` para que los usuarios puedan suscribirse a un plan.
-4. Utilizar el controlador `unsubscribe` para que los usuarios puedan cancelar su suscripción.
+- `controllers`: contiene los controladores para cada ruta.
+- `models`: contiene los modelos de la base de datos utilizando Prisma.
+- `routes`: contiene las rutas de la API.
+- `swagger`: contiene los archivos para la documentación de la API con Swagger.
+- `utils`: contiene funciones y utilidades generales para el proyecto.
 
-## Autores
+## Base de Datos
 
-- Nombre Apellido (correo-electrónico)
-- Nombre Apellido (correo-electrónico)
+El proyecto utiliza MySQL como base de datos y se utilizó Prisma como ORM para conectarse a ella.
+
+Se crearon tres tablas:
+
+- `User`: para almacenar los datos de los usuarios.
+- `Plan`: para almacenar los planes de suscripción disponibles.
+- `Subscription`: para almacenar la información de la suscripción de cada usuario.
+
+## Tecnologías Utilizadas
+
+- Node.js
+- Express.js
+- Prisma
+- MySQL
+- Cors
+- Nodemailer
+- JWT
+- Swagger
+
+## Cómo Iniciar el Proyecto
+
+1. Clonar el repositorio.
+2. Crear una base de datos en MySQL.
+3. Configurar las variables de entorno en el archivo `.env`.
+4. Instalar las dependencias con `npm install`.
+5. Ejecutar las migraciones con `npx prisma migrate dev`.
+6. Iniciar el servidor con `npm start`.
+
+## Estructura del Archivo `.env`
+
+El archivo `.env` debe contener las siguientes variables de entorno:
+
+```
+PORT=3000
+DB_HOST=localhost
+DB_USER=your_mysql_username
+DB_PASSWORD=your_mysql_password
+DB_NAME=your_mysql_database_name
+JWT_SECRET=your_jwt_secret_key
+EMAIL_HOST=your_email_host
+EMAIL_PORT=your_email_port
+EMAIL_USER=your_email_username
+EMAIL_PASSWORD=your_email_password
+```
+
+## Rutas de la API
+
+### Usuarios
+
+- `POST /api/users`: crear un usuario nuevo.
+- `GET /api/users/:id`: obtener información de un usuario por ID.
+- `PUT /api/users/:id`: actualizar información de un usuario por ID.
+- `DELETE /api/users/:id`: eliminar un usuario por ID.
+
+### Documentación de la API
+
+Para ver la documentación de la API se debe acceder a la ruta `/api-docs` en el navegador después de iniciar el servidor. La documentación se genera automáticamente con Swagger.
+
+## Métodos de Diseño Utilizados
+
+- Estructuración en carpetas y archivos separados para cada funcionalidad.
+- Utilización de controladores para separar la lógica de negocio de las rutas.
+- Utilización de modelos en Prisma para definir la estructura de la base de datos.
+- Utilización de variables de entorno para la configuración del servidor y otros datos sensibles.
+- Utilización de Swagger para la documentación automática de la API.
