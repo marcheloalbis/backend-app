@@ -139,5 +139,117 @@ Para ver la documentación de la API se debe acceder a la ruta `/api-docs` en el
 - Utilización de variables de entorno para la configuración del servidor y otros datos sensibles.
 - Utilización de Swagger para la documentación automática de la API.
 
+## Estructura del proyecto
 
+El proyecto está organizado de la siguiente manera:
+
+- `src`: contiene el código fuente de la aplicación
+  - `config`: contiene la configuración de la aplicación
+  - `controllers`: contiene los controladores de la aplicación
+  - `middlewares`: contiene los middlewares utilizados en la aplicación
+  - `models`: contiene los modelos de datos utilizados en la aplicación
+  - `routes`: contiene las rutas de la aplicación
+  - `services`: contiene los servicios de la aplicación
+  - `utils`: contiene utilidades utilizadas en la aplicación
+- `swagger`: contiene la documentación de la API en formato Swagger
+- `tests`: contiene los tests de la aplicación
+- `package.json`: archivo de configuración de NPM
+- `README.md`: este archivo
+
+## Tecnologías utilizadas
+
+- Node.js
+- Express
+- Prisma
+- MySQL
+- Cors
+- Nodemailer
+- JWT
+- Swagger
+
+## Instalación
+
+1. Clonar el repositorio:
+
+```sh
+git clone https://github.com/TU_USUARIO/backend-app.git
+```
+
+2. Instalar las dependencias:
+
+```sh
+cd backend-app
+npm install
+```
+
+3. Crear el archivo `.env` en el directorio raíz del proyecto y definir las variables de entorno:
+
+```
+PORT=3000
+DATABASE_URL=mysql://USER:PASSWORD@HOST:PORT/DATABASE_NAME
+JWT_SECRET=UNA_CLAVE_SECRETA
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=EMAIL_DE_ORIGEN
+SMTP_PASS=CONTRASEÑA_DE_ORIGEN
+```
+
+4. Crear la base de datos y ejecutar las migraciones:
+
+```sh
+npx prisma migrate dev
+```
+
+## Uso
+
+Para iniciar la aplicación, ejecutar el siguiente comando:
+
+```sh
+npm start
+```
+
+La aplicación estará disponible en `http://localhost:3000`.
+
+Para consultar la documentación de la API, acceder a `http://localhost:3000/api-docs`.
+
+## Estructura de la base de datos
+
+La base de datos está compuesta por las siguientes tablas:
+
+- `User`: almacena la información de los usuarios de la aplicación.
+- `Plan`: almacena la información de los planes de suscripción disponibles.
+- `Subscription`: almacena la información de las suscripciones de los usuarios.
+
+## Contributing
+
+1. Clonar el repositorio:
+
+```sh
+git clone https://github.com/TU_USUARIO/backend-app.git
+```
+
+2. Crear una nueva rama:
+
+```sh
+git checkout -b nombre-de-la-rama
+```
+
+3. Hacer los cambios necesarios y hacer commit:
+
+```sh
+git add .
+git commit -m "Mensaje descriptivo de los cambios realizados"
+```
+
+4. Subir los cambios:
+
+```sh
+git push origin nombre-de-la-rama
+```
+
+5. Crear un Pull Request en GitHub.
+
+## Licencia
+
+MIT.
 
