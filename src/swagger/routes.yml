@@ -1,19 +1,56 @@
-definitions:
-  User:
-    type: object
-    properties:
-      name:
-        type: string
-      email:
-        type: string
-      password:
-        type: string
-    required:
-      - name
-      - email
-      - password
-
-  Users:
-    type: array
-    items:
-      $ref: "#/definitions/User"
+openapi: 3.0.0
+info:
+  title: Ejemplo de API
+  description: Descripción de la API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /users:
+    get:
+      summary: Obtiene la lista de usuarios
+      responses:
+        '200':
+          description: Lista de usuarios
+    post:
+      summary: Crea un usuario nuevo
+      responses:
+        '201':
+          description: Usuario creado exitosamente
+  /users/{id}:
+    get:
+      summary: Obtiene los detalles de un usuario específico
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID del usuario a obtener
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Detalles del usuario
+    put:
+      summary: Actualiza los datos de un usuario existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID del usuario a actualizar
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Usuario actualizado exitosamente
+    delete:
+      summary: Elimina un usuario existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: ID del usuario a eliminar
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Usuario eliminado exitosamente
