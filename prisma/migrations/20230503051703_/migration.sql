@@ -14,6 +14,7 @@ CREATE TABLE `User` (
     `email` VARCHAR(191) NOT NULL,
     `name` VARCHAR(191) NOT NULL,
     `password` VARCHAR(191) NOT NULL,
+    `active` BOOLEAN NOT NULL,
     `subscriptionId` INTEGER NULL,
 
     UNIQUE INDEX `User_email_key`(`email`),

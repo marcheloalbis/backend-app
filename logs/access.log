@@ -1,2 +1,20 @@
 GET /users HTTP/1.1 401 33 - 2.973 ms ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
 GET /users HTTP/1.1 401 33 - 0.923 ms ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+GET / HTTP/1.1 200 1661 - 45.485 ms ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+GET /favicon.ico HTTP/1.1 404 150 - 4.368 ms ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+POST /users/login HTTP/1.1 404 151 - 1.017 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/login HTTP/1.1 200 155 - 962.172 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 500 36 - 292.607 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 400 31 - 3.613 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 500 36 - 82.592 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 134.721 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 127.308 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 633.599 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 2047.182 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 187.927 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 167.632 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 149.192 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 173.938 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 3627.093 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+POST /auth/register HTTP/1.1 200 86 - 3538.605 ms ::ffff:127.0.0.1 insomnia/2023.2.0
+GET /auth/activate-account/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjExLCJpYXQiOjE2ODMwOTI2MzMsImV4cCI6MTY4MzE3OTAzM30.yMzZOZqgPOeO30jWNx5uI5g_-nIgMrHUnzp4kVtz1dA HTTP/1.1 404 305 - 2.927 ms ::1 Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
