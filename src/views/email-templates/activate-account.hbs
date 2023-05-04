@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Activar cuenta</title>
+    <style>
+      body {
+        background-color: #0077c2;
+        color: #ffffff;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #ffffff;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #000;
+      }
+
+      .content {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: #000;
+      }
+
+      .activation-link {
+        display: block;
+        background-color: #ffffff;
+        color: #0077c2;
+        padding: 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      .activation-link:hover {
+        background-color: #0077c2;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Activar cuenta</div>
+      <div class="content">
+        <p>Hola {{name}},</p>
+        <p>Bienvenido a nuestra aplicación. Para activar tu cuenta, sigue el siguiente enlace:</p>
+        <a href="{{activationLink}}" class="activation-link">Haz clic aquí para activar tu cuenta</a>
+        <p>Gracias,</p>
+        <p>El equipo de nuestra aplicación</p>
+      </div>
+    </div>
+  </body>
+</html>

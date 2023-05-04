@@ -1,6 +1,7 @@
-const ejs = require('ejs');
+const hbs = require('hbs');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const fs = require('fs');
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.ethereal.email',
@@ -15,9 +16,9 @@ const transporter = nodemailer.createTransport({
 
 async function sendEmail(to, subject, templateName, variables) {
   try {
-    console.log('=============Z',process.env.EMAIL_USER,process.env.EMAIL_PASS )
-    const templatePath = path.join(__dirname, '../','views', 'email-templates', `${templateName}.ejs`);
-    const html = await ejs.renderFile(templatePath, variables);
+    const templatePath = path.join(__dirname, '../', 'views', 'email-templates', `${templateName}.hbs`);
+    const template = hbs.compile(fs.readFileSync(templatePath, 'utf8'));
+    const html = template(variables);
     const info = await transporter.sendMail({
       from:  process.env.EMAIL_USER,
       to,

@@ -5,3 +5,186 @@
 {"level":"error","message":"TypeError: Cannot read properties of undefined (reading 'token')\n    at authenticateToken (D:\\dev\\pruebas\\backend-app\\src\\middlewares\\authenticateToken.js:6:29)\n    at Layer.handle [as handle_request] (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2023-05-01T02:55:40.114Z"}
 {"level":"error","message":"TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.\n    at login (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:9:13)\n    at Layer.handle [as handle_request] (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2023-05-01T02:58:21.106Z"}
 {"level":"error","message":"TypeError: Cannot destructure property 'email' of 'req.body' as it is undefined.\n    at register (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:35:13)\n    at Layer.handle [as handle_request] (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\route.js:144:13)\n    at Route.dispatch (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\route.js:114:3)\n    at Layer.handle [as handle_request] (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2023-05-01T03:03:22.605Z"}
+{"level":"error","message":"Error: Failed to lookup view \"accountActivated\" in views directory \"D:\\dev\\pruebas\\backend-app\\src\\views\"\n    at Function.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\application.js:597:17)\n    at ServerResponse.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\response.js:1039:7)\n    at activateAccount (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:93:7)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","timestamp":"2023-05-04T01:40:38.709Z"}
+{"level":"error","message":"Error: Failed to lookup view \"account-activated\" in views directory \"D:\\dev\\pruebas\\backend-app\\src\\views\"\n    at Function.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\application.js:597:17)\n    at ServerResponse.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\response.js:1039:7)\n    at activateAccount (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:93:7)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","timestamp":"2023-05-04T01:44:33.739Z"}
+{"level":"error","message":"Error: Failed to lookup view \"account-activated\" in views directory \"D:\\dev\\pruebas\\backend-app\\src\\views\"\n    at Function.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\application.js:597:17)\n    at ServerResponse.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\response.js:1039:7)\n    at activateAccount (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:92:8)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","timestamp":"2023-05-04T01:47:50.816Z"}
+{"level":"error","message":"Error: Failed to lookup view \"account-already-activated\" in views directory \"D:\\dev\\pruebas\\backend-app\\src\\views\"\n    at Function.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\application.js:597:17)\n    at ServerResponse.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\response.js:1039:7)\n    at activateAccount (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:80:8)","timestamp":"2023-05-04T01:49:18.571Z"}
+{"level":"error","message":"Error: Failed to lookup view \"account-already-activated\" in views directory \"D:\\dev\\pruebas\\backend-app\\src\\views\"\n    at Function.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\application.js:597:17)\n    at ServerResponse.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\response.js:1039:7)\n    at activateAccount (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:80:8)","timestamp":"2023-05-04T01:49:31.936Z"}
+{"level":"error","message":"Error: Failed to lookup view \"error\" in views directory \"D:\\dev\\pruebas\\backend-app\\src\\views\"\n    at Function.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\application.js:597:17)\n    at ServerResponse.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\response.js:1039:7)\n    at activateAccount (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:104:7)","timestamp":"2023-05-04T01:50:04.484Z"}
+{"level":"error","message":"Error: Failed to lookup view \"reset-password\" in views directory \"D:\\dev\\pruebas\\backend-app\\src\\views\"\n    at Function.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\application.js:597:17)\n    at ServerResponse.render (D:\\dev\\pruebas\\backend-app\\node_modules\\express\\lib\\response.js:1039:7)\n    at resetPasswordView (D:\\dev\\pruebas\\backend-app\\src\\controllers\\authController.js:182:13)","timestamp":"2023-05-04T02:20:57.856Z"}
+2023-05-04T03:55:55.228Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-05-04T03:55:55.231Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-05-04T03:59:33.743Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-05-04T03:59:33.745Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-05-04T03:59:37.735Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-05-04T03:59:37.738Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-05-04T03:59:50.980Z - error: Error when starting http server on port 3000 Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-05-04T03:59:50.983Z - error: Error occurred during reporter init: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:22:12
+    at new Promise (<anonymous>)
+    at startAsync (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:16:10)
+    at D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:50:14
+    at Object.start (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:125:13)
+    at Object.<anonymous> (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-express\lib\main.js:333:30)
+    at async ListenerCollection.fire (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\shared\listenerCollection.js:157:21)
+2023-05-04T04:16:34.946Z - error: Error occurred during reporter init: Error: Error when loading extension pdf-utils@1.11.1
+Error: Extension "pdf-utils" is not compatible with "core" extension. Missing ".requires" information in "pdf-utils" definition
+    at validateMinimalVersion (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at async generateReport (D:\dev\pruebas\backend-app\src\utils\reportGenerator.js:10:7)
+    at async getAllUsersReport (D:\dev\pruebas\backend-app\src\controllers\reportController.js:8:20)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at async generateReport (D:\dev\pruebas\backend-app\src\utils\reportGenerator.js:10:7)
+    at async getAllUsersReport (D:\dev\pruebas\backend-app\src\controllers\reportController.js:8:20)
+2023-05-04T04:17:18.948Z - error: Error occurred during reporter init: Error: Error when loading extension pdf-utils@1.11.1
+Error: Extension "pdf-utils" is not compatible with "core" extension. Missing ".requires" information in "pdf-utils" definition
+    at validateMinimalVersion (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at async generateReport (D:\dev\pruebas\backend-app\src\utils\reportGenerator.js:10:7)
+    at async getAllUsersReport (D:\dev\pruebas\backend-app\src\controllers\reportController.js:8:20)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at async generateReport (D:\dev\pruebas\backend-app\src\utils\reportGenerator.js:10:7)
+    at async getAllUsersReport (D:\dev\pruebas\backend-app\src\controllers\reportController.js:8:20)
+2023-05-04T04:20:53.857Z - error: Error occurred during reporter init: Error: Error when loading extension phantom-pdf@2.6.1
+Error: Extension "phantom-pdf" is not compatible with "core" extension. Missing ".requires" information in "phantom-pdf" definition
+    at validateMinimalVersion (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at async generateReport (D:\dev\pruebas\backend-app\src\utils\reportGenerator.js:14:5)
+    at async getAllUsersReport (D:\dev\pruebas\backend-app\src\controllers\reportController.js:8:20)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at async generateReport (D:\dev\pruebas\backend-app\src\utils\reportGenerator.js:14:5)
+    at async getAllUsersReport (D:\dev\pruebas\backend-app\src\controllers\reportController.js:8:20)
+2023-05-04T04:28:40.335Z - error: Error occurred during reporter init: Error: Error when loading extension phantom-pdf@2.6.1
+Error: Extension "phantom-pdf" is not compatible with "core" extension. Missing ".requires" information in "phantom-pdf" definition
+    at validateMinimalVersion (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at async generateReport (D:\dev\pruebas\backend-app\src\utils\reportGenerator.js:10:5)
+    at async getAllUsersReport (D:\dev\pruebas\backend-app\src\controllers\reportController.js:8:20)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at async generateReport (D:\dev\pruebas\backend-app\src\utils\reportGenerator.js:10:5)
+    at async getAllUsersReport (D:\dev\pruebas\backend-app\src\controllers\reportController.js:8:20)
+2023-05-04T05:27:05.472Z - error: Error occurred during reporter init: Error: Error when loading extension xlsx@2.5.0
+Error: Extension "xlsx" is not compatible with "core" extension. Missing ".requires" information in "xlsx" definition
+    at validateMinimalVersion (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+2023-05-04T05:27:26.984Z - error: Error occurred during reporter init: Error: Error when loading extension xlsx@2.5.0
+Error: Extension "xlsx" is not compatible with "core" extension. Missing ".requires" information in "xlsx" definition
+    at validateMinimalVersion (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+2023-05-04T05:28:11.666Z - error: Error occurred during reporter init: Error: Error when loading extension xlsx@2.5.0
+Error: Extension "xlsx" is not compatible with "core" extension. Missing ".requires" information in "xlsx" definition
+    at validateMinimalVersion (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+2023-05-04T05:34:36.033Z - error: Error occurred during reporter init: Error: Error when loading extension xlsx@2.5.0
+Error: Extension "xlsx" is not compatible with "core" extension. Missing ".requires" information in "xlsx" definition
+    at validateMinimalVersion (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\validateMinimalVersion.js:24:11)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:158:9)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
+    at Object._useOne (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:248:15)
+    at Object._useMany (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\extensions\extensionsManager.js:99:38)
+    at async MainReporter.init (D:\dev\pruebas\backend-app\node_modules\@jsreport\jsreport-core\lib\main\reporter.js:216:7)
