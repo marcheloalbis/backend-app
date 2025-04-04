@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Activa tu cuenta</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+        color: #0077c2;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        color: #333333;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        background-color: #0077c2;
+        color: #ffffff !important;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .button:hover {
+        background-color: #005a99;
+      }
+
+      .footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #999999;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">¡Activa tu cuenta!</div>
+      <div class="content">
+        <p>Hola {{name}},</p>
+        <p>
+          Gracias por registrarte en nuestra aplicación. Para confirmar tu cuenta, por favor haz clic en el siguiente botón:
+        </p>
+
+        <p style="text-align: center">
+          <a href="{{activationLink}}" class="button">Activar cuenta</a>
+        </p>
+
+        <p>
+          Si no solicitaste esta cuenta, puedes ignorar este mensaje.
+        </p>
+
+        <p>¡Saludos!<br />El equipo de BackendApp 🚀</p>
+      </div>
+      <div class="footer">
+        Este correo fue enviado automáticamente, por favor no respondas.
+      </div>
+    </div>
+  </body>
+</html>
