@@ -8,7 +8,7 @@ export class LoggerMiddleware implements NestMiddleware {
   private accessLogStream: fs.WriteStream;
 
   constructor() {
-    const logDir = path.join(__dirname, '../../../logs/access');
+    const logDir = path.join(process.cwd(), 'logs/access');
     if (!fs.existsSync(logDir)) {
       fs.mkdirSync(logDir, { recursive: true });
     }
@@ -20,10 +20,11 @@ export class LoggerMiddleware implements NestMiddleware {
   }
 
   use(req: any, res: any, next: () => void) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    morgan(
-      ':method :url HTTP/:http-version :status :res[content-length] - :response-time ms :remote-addr :user-agent',
-      { stream: this.accessLogStream },
-    )(req, res, next);
+    const format =
+      ':date[iso] :remote-addr :method :url HTTP/:http-version :status :res[content-length] - :response-time ms ":referrer" ":user-agent"';
+
+    morgan(format, {
+      stream: this.accessLogStream,
+    })(req, res, next);
   }
 }

@@ -9,11 +9,14 @@ import { TestService } from './test/test.service';
 import { LoggerMiddleware } from './common/middlewares/logger.middleware';
 import { APP_FILTER } from '@nestjs/core';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
+import { AuthModule } from './auth/auth.module';
+import { CoreModule } from './core/core.module';
 @Module({
   imports: [
-    PrismaModule,
     ConfigModule.forRoot({ isGlobal: true }),
     WinstonModule.forRoot(winstonConfig),
+    CoreModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [
@@ -27,6 +30,6 @@ import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(LoggerMiddleware).forRoutes('*'); // Aplica a todas las rutas
+    consumer.apply(LoggerMiddleware).forRoutes('*');
   }
 }
