@@ -1,14 +1,15 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import * as morgan from 'morgan';
+import morgan, { StreamOptions } from 'morgan';
 import * as fs from 'fs';
 import * as path from 'path';
+import { Request, Response, NextFunction } from 'express';
 
 @Injectable()
 export class LoggerMiddleware implements NestMiddleware {
-  private accessLogStream: fs.WriteStream;
+  private readonly accessLogStream: fs.WriteStream;
 
   constructor() {
-    const logDir = path.join(process.cwd(), 'logs/access');
+    const logDir = path.resolve(process.cwd(), 'logs/access');
     if (!fs.existsSync(logDir)) {
       fs.mkdirSync(logDir, { recursive: true });
     }
@@ -17,14 +18,31 @@ export class LoggerMiddleware implements NestMiddleware {
     const logPath = path.join(logDir, `${date}-access.log`);
 
     this.accessLogStream = fs.createWriteStream(logPath, { flags: 'a' });
+
+    // Registrar token de fecha en formato local legible
+    morgan.token('date', () => {
+      const now = new Date();
+      now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+      return now.toISOString().replace('T', ' ').split('.')[0];
+    });
   }
 
-  use(req: any, res: any, next: () => void) {
-    const format =
-      ':date[iso] :remote-addr :method :url HTTP/:http-version :status :res[content-length] - :response-time ms ":referrer" ":user-agent"';
+  use(req: Request, res: Response, next: NextFunction): void {
+    const format: string =
+      ':date :remote-addr :method :url HTTP/:http-version :status :res[content-length] - :response-time ms ":referrer" ":user-agent"';
 
-    morgan(format, {
-      stream: this.accessLogStream,
-    })(req, res, next);
+    const stream: StreamOptions = {
+      write: (message: string) => {
+        this.accessLogStream.write(message);
+      },
+    };
+
+    const loggerMiddleware = morgan(format, { stream }) as (
+      req: Request,
+      res: Response,
+      next: NextFunction,
+    ) => void;
+
+    loggerMiddleware(req, res, next);
   }
 }

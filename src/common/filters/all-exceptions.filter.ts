@@ -1,52 +1,55 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import {
   ExceptionFilter,
   Catch,
   ArgumentsHost,
   HttpException,
-  HttpStatus,
-  Inject,
-  LoggerService,
 } from '@nestjs/common';
 import { Request, Response } from 'express';
 import { WINSTON_MODULE_NEST_PROVIDER } from 'nest-winston';
+import { Inject } from '@nestjs/common';
+import { Logger as WinstonLogger } from 'winston';
 
 @Catch()
 export class AllExceptionsFilter implements ExceptionFilter {
   constructor(
     @Inject(WINSTON_MODULE_NEST_PROVIDER)
-    private readonly logger: LoggerService,
+    private readonly logger: WinstonLogger,
   ) {}
 
   catch(exception: unknown, host: ArgumentsHost) {
     const ctx = host.switchToHttp();
-    const response = ctx.getResponse<Response>();
     const request = ctx.getRequest<Request>();
+    const response = ctx.getResponse<Response>();
 
     const status =
-      exception instanceof HttpException
-        ? exception.getStatus()
-        : HttpStatus.INTERNAL_SERVER_ERROR;
+      exception instanceof HttpException ? exception.getStatus() : 500;
 
     const message =
       exception instanceof HttpException
-        ? exception.getResponse()
-        : (exception as any)?.message || 'Internal server error';
+        ? exception.message
+        : 'Internal server error';
 
-    const errorResponse = {
-      statusCode: status,
-      timestamp: new Date().toISOString(),
-      path: request.url,
+    const stack = exception instanceof Error ? exception.stack : undefined;
+
+    const errorLog = {
       method: request.method,
-      message,
+      url: request.url,
+      ip: request.ip,
+      headers: request.headers,
+      body: request.body as Record<string, unknown>,
+      query: request.query,
+      statusCode: status,
     };
 
     this.logger.error(
-      `[${request.method}] ${request.url} - ${JSON.stringify(message)}`,
-      (exception as any)?.stack || '',
+      `[${request.method}] ${request.url} - "${message}"`,
+      stack,
+      errorLog,
     );
 
-    response.status(status).json(errorResponse);
+    response.status(status).json({
+      statusCode: status,
+      message,
+    });
   }
 }

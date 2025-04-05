@@ -4,11 +4,13 @@ import * as jwt from 'jsonwebtoken';
 import { PrismaService } from '../prisma/prisma.service';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
-import { sendEmail } from 'src/mailer/mailer.helper';
-
+import { MailerService } from '../mailer/mailer.service';
 @Injectable()
 export class AuthService {
-  constructor(private prisma: PrismaService) {}
+  constructor(
+    private prisma: PrismaService,
+    private readonly mailerService: MailerService,
+  ) {}
 
   private readonly jwtSecret = process.env.JWT_SECRET;
 
@@ -51,7 +53,7 @@ export class AuthService {
         activationLink,
       };
 
-      await sendEmail(
+      await this.mailerService.sendEmail(
         user.email,
         'Activa tu cuenta',
         'activate-account',
@@ -79,7 +81,7 @@ export class AuthService {
         userId: user.id,
         email: user.email,
         name: user.name,
-       // subscriptionId: user.subscriptionId,
+        // subscriptionId: user.subscriptionId,
       },
       this.ensureJwtSecret(),
       {
@@ -115,7 +117,7 @@ export class AuthService {
     });
 
     const variables = { name: updatedUser.name };
-    await sendEmail(
+    await this.mailerService.sendEmail(
       updatedUser.email,
       'Cuenta Activada',
       'account-activated',
@@ -145,7 +147,7 @@ export class AuthService {
       resetUrl,
     };
 
-    await sendEmail(
+    await this.mailerService.sendEmail(
       user.email,
       'Restablecer contraseña',
       'reset-password',
@@ -180,5 +182,34 @@ export class AuthService {
     });
 
     return { token: newToken, message: 'Contraseña actualizada correctamente' };
+  }
+
+  async resetPasswordWithCurrent(
+    userId: number,
+    oldPassword: string,
+    newPassword: string,
+  ) {
+    const user = await this.prisma.user.findUnique({
+      where: { id: userId },
+    });
+
+    if (!user) {
+      throw new Error('Usuario no encontrado');
+    }
+
+    const isMatch = await bcrypt.compare(oldPassword, user.password);
+
+    if (!isMatch) {
+      throw new UnauthorizedException('Contraseña actual incorrecta');
+    }
+
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    await this.prisma.user.update({
+      where: { id: user.id },
+      data: { password: hashedPassword },
+    });
+
+    return { message: 'Contraseña actualizada exitosamente' };
   }
 }

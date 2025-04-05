@@ -1,14 +1,12 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-// src/auth/dto/login.dto.ts
 import { IsEmail, IsString, MinLength } from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 
 export class LoginDto {
-  @ApiProperty({ example: 'usuario@correo.com' })
+  @ApiProperty({ example: 'user@example.com' })
   @IsEmail()
   email: string;
 
-  @ApiProperty({ example: '123456' })
+  @ApiProperty({ example: 'supersecure123' })
   @IsString()
   @MinLength(6)
   password: string;

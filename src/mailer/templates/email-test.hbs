@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prueba de Envío de Correo</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        color: #333;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 30px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0077c2;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .content {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      .highlight {
+        color: #0077c2;
+        font-weight: bold;
+      }
+
+      .footer {
+        margin-top: 30px;
+        font-size: 14px;
+        text-align: center;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">📨 Prueba de Envío de Correo</div>
+      <div class="content">
+        <p>Hola <span class="highlight">{{name}}</span>,</p>
+        <p>Este es un mensaje de prueba para confirmar que el sistema de correo funciona correctamente.</p>
+        <p>Enlace de ejemplo: <a href="{{activationLink}}" target="_blank">{{activationLink}}</a></p>
+        <p>Gracias por tu paciencia.</p>
+      </div>
+      <div class="footer">
+        &copy; {{year}} Backend Base. Todos los derechos reservados.
+      </div>
+    </div>
+  </body>
+</html>
