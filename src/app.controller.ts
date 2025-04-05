@@ -1,10 +1,13 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import { Controller, Get, Query } from '@nestjs/common';
+import { UseGuards, Controller, Get, Req, Query } from '@nestjs/common';
+import { User } from './common/decorators/user.decorator';
 import { AppService } from './app.service';
 import { TestService } from './test/test.service';
 import { ApiOperation, ApiQuery } from '@nestjs/swagger';
 import { sendEmail } from './mailer/mailer.helper'; // ⬅️ IMPORTA TU HELPER
+import { JwtAuthGuard } from './auth/guards/jwt-auth.guard';
 
 @Controller()
 export class AppController {
@@ -13,9 +16,11 @@ export class AppController {
     private readonly testService: TestService,
   ) {}
 
+  @UseGuards(JwtAuthGuard)
   @Get()
   @ApiOperation({ summary: 'Obtener saludo de prueba' })
-  getHello(): string {
+  getHello(@User() user: any): string {
+    console.log(user); // Aquí puedes ver el usuario autenticado
     // this.testService.testLog(); // Aquí se dispara el log
     return 'Hello World!';
   }

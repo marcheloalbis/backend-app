@@ -74,9 +74,18 @@ export class AuthService {
       throw new UnauthorizedException('Credenciales inválidas');
     }
 
-    const token = jwt.sign({ userId: user.id }, this.ensureJwtSecret(), {
-      expiresIn: '1d',
-    });
+    const token = jwt.sign(
+      {
+        userId: user.id,
+        email: user.email,
+        name: user.name,
+       // subscriptionId: user.subscriptionId,
+      },
+      this.ensureJwtSecret(),
+      {
+        expiresIn: '1d',
+      },
+    );
 
     return { token };
   }
