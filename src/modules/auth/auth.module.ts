@@ -3,11 +3,12 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { MailerModule } from '../mailer/mailer.module';
-import { PrismaModule } from '../prisma/prisma.module';
+import { CoreModule } from 'src/shared/core.module';
 @Module({
   imports: [
-    PrismaModule,
-    MailerModule, // ✅ <--- ESTO ES CLAVE
+    CoreModule,           // Prisma, Config, Logger
+    AuthModule,
+    MailerModule,
   ],
   providers: [AuthService, JwtStrategy, MailerModule],
   controllers: [AuthController],

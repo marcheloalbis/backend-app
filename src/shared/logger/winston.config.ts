@@ -1,17 +1,16 @@
-import { utilities as nestWinstonModuleUtilities } from 'nest-winston';
 import * as winston from 'winston';
 import * as fs from 'fs';
 import * as path from 'path';
 
-const logDir = path.resolve(__dirname, '../../logs');
+const logDir = path.resolve(process.cwd(), 'logs');
 
-['error', 'access', 'info'].forEach((dir) => {
-  const fullPath = path.join(logDir, dir);
+// Crear subdirectorios si no existen
+['error', 'access', 'info'].forEach((subdir) => {
+  const fullPath = path.join(logDir, subdir);
   if (!fs.existsSync(fullPath)) {
     fs.mkdirSync(fullPath, { recursive: true });
   }
 });
-
 const date = new Date().toISOString().split('T')[0];
 
 const customJsonFormat = winston.format.combine(

@@ -1,9 +1,9 @@
 import { Controller, Get, Query, UseGuards } from '@nestjs/common';
 import { AppService } from './app.service';
-import { MailerService } from './mailer/mailer.service';
-import { JwtAuthGuard } from './auth/guards/jwt-auth.guard';
 import { User } from './common/decorators/user.decorator';
 import { ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
+import { JwtAuthGuard } from './modules/auth/guards/jwt-auth.guard';
+import { MailerService } from './modules/mailer/mailer.service';
 
 @ApiTags('App')
 @Controller()

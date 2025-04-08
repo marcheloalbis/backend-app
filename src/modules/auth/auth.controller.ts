@@ -4,7 +4,7 @@ import { ApiBody, ApiOperation, ApiParam, ApiTags } from '@nestjs/swagger';
 import { AuthService } from './auth.service';
 import { MailerService } from '../mailer/mailer.service';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
-import { User } from '../common/decorators/user.decorator';
+import { User } from '../../common/decorators/user.decorator';
 
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';

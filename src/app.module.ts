@@ -8,7 +8,6 @@ import { ConfigModule } from '@nestjs/config';
 import { APP_FILTER } from '@nestjs/core';
 
 import { WinstonModule } from 'nest-winston';
-import { winstonConfig } from './logger/winston.config';
 
 import { LoggerMiddleware } from './common/middlewares/logger.middleware';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
@@ -16,9 +15,11 @@ import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
-import { AuthModule } from './auth/auth.module';
-import { CoreModule } from './core/core.module';
-import { MailerModule } from './mailer/mailer.module';
+
+import { CoreModule } from '@shared/core.module';
+import { AuthModule } from './modules/auth/auth.module';
+import { MailerModule } from './modules/mailer/mailer.module';
+import { winstonConfig } from './shared/logger/winston.config';
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
