@@ -6,11 +6,10 @@ import { MailerModule } from '../mailer/mailer.module';
 import { CoreModule } from 'src/shared/core.module';
 @Module({
   imports: [
-    CoreModule,           // Prisma, Config, Logger
-    AuthModule,
+    CoreModule, // Prisma, Config, Logger
     MailerModule,
   ],
-  providers: [AuthService, JwtStrategy, MailerModule],
+  providers: [AuthService, JwtStrategy],
   controllers: [AuthController],
   exports: [AuthService],
 })
