@@ -79,7 +79,6 @@ PORT=3000
 ```
 src/
 ├── auth/           # Autenticación y JWT
-├── user/           # Módulo de usuarios
 ├── mailer/         # Servicio para envío de correos
 ├── prisma/         # Servicio de Prisma y conexión a DB
 ├── common/         # Middlewares, filtros, helpers globales
